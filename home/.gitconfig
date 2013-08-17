@@ -1,0 +1,30 @@
+[user]
+  name = Jeremy Mickelson
+  email = Jeremy.Mickelon@gmail.com
+
+# normal, black, red, green, yellow, blue, magenta, cyan and white
+[color]
+  ui = true
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow
+  frag = cyan
+  func = magenta
+  old = red
+  new = green
+  commit = red
+  whitespace = red reverse
+  plain = normal
+[color "status"]
+#  added = yellow
+#  changed = green
+#  untracked = cyan
+
+[alias]
+  wdiff = diff --word-diff
