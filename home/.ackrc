@@ -1,1 +1,1 @@
---type-add=temp:ext:tmp
+--type-add=ruby:ext:builder,thor,jbuilder,prawn
