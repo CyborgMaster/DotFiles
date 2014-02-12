@@ -6,3 +6,6 @@
 
 # Custom types
 --type-add=ruby:ext:builder,thor,jbuilder,prawn
+
+# ignore case if search is all lowercase
+--smart-case
