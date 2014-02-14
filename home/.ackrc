@@ -9,3 +9,6 @@
 
 # ignore case if search is all lowercase
 --smart-case
+
+# ignore log files
+--ignore-dir=log
