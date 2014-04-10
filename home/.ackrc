@@ -12,3 +12,4 @@
 
 # ignore log files
 --ignore-dir=log
+--ignore-dir=tmp
