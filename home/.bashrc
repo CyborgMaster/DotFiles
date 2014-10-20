@@ -147,18 +147,21 @@ function start_agent {
 
 # Source SSH settings, if applicable
 
-# if [ -f "${SSH_ENV}" ]; then
-#      . ${SSH_ENV} > /dev/null
-#      #ps ${SSH_AGENT_PID} doesn't work under cywgin
-#      ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
-#          start_agent;
-#      }
-# else
-#      start_agent;
-# fi
+if [ -f "${SSH_ENV}" ]; then
+     . ${SSH_ENV} > /dev/null
+     #ps ${SSH_AGENT_PID} doesn't work under cywgin
+     ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent > /dev/null || {
+         start_agent;
+     }
+else
+     start_agent;
+fi
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
+
+# Colorize maven output
+source ~/projects/colorize-maven/colorize-maven.sh
 
 # Aliases to help moving around the filesystem
 export MARKPATH=$HOME/.marks

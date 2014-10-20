@@ -1,3 +1,6 @@
+alias update_structure='git checkout master db/structure.sql &&
+  RAILS_ENV=test spring rake db:drop db:create db:structure:load db:migrate'
+
 alias sudo='sudo '
 alias be='bundle exec'
 
@@ -26,7 +29,7 @@ hgdiff()
 ccMonitor() {
   while ~/bin/sleep_until_modified.py "$1" ; do
     echo -n 'copying...'
-    scp -q $1 js:/cygdrive/c/inetpub/wwwroot/ComputerCraft/$1.txt
+    cp $1 /Volumes/www/htdocs/ComputerCraft/
     echo ' done'
   done
 }
