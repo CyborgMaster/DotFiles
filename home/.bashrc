@@ -160,9 +160,6 @@ fi
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
 
-# Colorize maven output
-source ~/projects/colorize-maven/colorize-maven.sh
-
 # Aliases to help moving around the filesystem
 export MARKPATH=$HOME/.marks
 function jump {
@@ -180,3 +177,5 @@ function marks {
 
 #use homeshick for managing dotfiles in git
 alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"
+
+export HOMEBREW_GITHUB_API_TOKEN='9fe8c1dc328eac75159e58dfe1b8be53c71d989b'

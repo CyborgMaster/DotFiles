@@ -34,3 +34,5 @@
 [merge]
 	defaultToUpstream = true
 #	ff = false
+[push]
+	default = simple
