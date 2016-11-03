@@ -103,8 +103,6 @@ esac
     alias egrep='egrep --color=auto'
 #fi
 
-
-
 # some more ls aliases
 alias ll='ls -alFh'
 alias la='ls -A'
@@ -157,9 +155,6 @@ else
      start_agent;
 fi
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
-
 # Aliases to help moving around the filesystem
 export MARKPATH=$HOME/.marks
 function jump {
@@ -182,3 +177,5 @@ export HOMEBREW_GITHUB_API_TOKEN='9fe8c1dc328eac75159e58dfe1b8be53c71d989b'
 
 # Enable jenv - https://github.com/gcuisinier/jenv
 eval "$(jenv init -)"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
