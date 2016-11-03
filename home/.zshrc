@@ -1,6 +1,3 @@
-source "$HOME/.homesick/repos/homeshick/homeshick.sh"
-fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
-
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/jeremy/.oh-my-zsh
 
