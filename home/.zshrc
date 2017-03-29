@@ -55,13 +55,11 @@ plugins=(git jump emacs colored-man-pages brew osx ssh-agent nyan
 
 # User configuration
 
-export PATH="/Users/jeremy/.jenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/Users/jeremy/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin"
+export PATH="/Users/jeremy/bin:/Users/jeremy/.jenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin"
 
 export PATH=~/Library/Python/2.7/bin:$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
-
-source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -89,8 +87,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias j=jump
 alias agr='alias | grep'
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 
 export LESSOPEN="| pygmentize -g -f terminal256 %s"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+source $ZSH/oh-my-zsh.sh
