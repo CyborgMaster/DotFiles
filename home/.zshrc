@@ -51,7 +51,7 @@ ZSH_THEME="cyborg"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git jump emacs colored-man-pages brew osx ssh-agent nyan
-         extract bower mvn node nvm rvm gem rails rake pip rand-quote)
+         extract bower mvn node nvm bundler rvm gem rails rake pip rand-quote)
 
 # User configuration
 
