@@ -88,6 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias j=jump
 alias agr='alias | grep'
+alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 
 export LESSOPEN="| pygmentize -g -f terminal256 %s"
 
