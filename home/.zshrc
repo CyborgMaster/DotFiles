@@ -51,7 +51,7 @@ ZSH_THEME="cyborg"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git jump emacs colored-man-pages brew osx ssh-agent nyan
-         extract bower mvn node nvm bundler rvm gem rails rake pip rand-quote)
+         extract bower mvn node nvm rvm gem rails rake pip rand-quote)
 
 # User configuration
 
@@ -60,6 +60,8 @@ export PATH=~/Library/Python/2.7/bin:$PATH
 export HOMEBREW_GITHUB_API_TOKEN="c99aa2bfcfc4f2ca3f66f076b985a29d41f50d3c"
 
 # export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -91,5 +93,3 @@ alias agr='alias | grep'
 export LESSOPEN="| pygmentize -g -f terminal256 %s"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-source $ZSH/oh-my-zsh.sh
