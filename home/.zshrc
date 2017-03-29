@@ -56,8 +56,8 @@ plugins=(git jump emacs colored-man-pages brew osx ssh-agent nyan
 # User configuration
 
 export PATH="/Users/jeremy/bin:/Users/jeremy/.jenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin"
-
 export PATH=~/Library/Python/2.7/bin:$PATH
+export HOMEBREW_GITHUB_API_TOKEN="c99aa2bfcfc4f2ca3f66f076b985a29d41f50d3c"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
