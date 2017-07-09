@@ -90,6 +90,6 @@ source $ZSH/oh-my-zsh.sh
 alias j=jump
 alias agr='alias | grep'
 
-export LESSOPEN="| pygmentize -g -f terminal256 %s"
+export LESSOPEN="| pygmentize -f terminal256 %s"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
