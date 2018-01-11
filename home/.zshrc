@@ -102,3 +102,22 @@ optimize-image() {
             -define png:exclude-chunk=all -interlace none -colorspace sRGB \
             -strip $1 $3
 }
+
+git-stats-by-author() {
+    # sort people by lines changed and put total at the top
+    jq_cmd=$(cat <<'JQ'
+to_entries |
+[
+  .[-1],
+  (.[:-1] | sort_by(.value."lines changed") | reverse)
+] |
+flatten |
+from_entries
+JQ
+             )
+
+    git quick-stats detailedGitStats |
+        tail -n +3 | # skip past header
+        sed $'s/\t/    /g' | # replace tabs with space to get valid YAML
+        yq -y $jq_cmd
+}
