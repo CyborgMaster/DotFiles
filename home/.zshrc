@@ -93,6 +93,7 @@ alias agr='alias | grep'
 export LESSOPEN="| pygmentize -f terminal256 %s"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.cargo/bin:$PATH"
 
 optimize-image() {
     convert -filter Triangle -define filter:support=2 -thumbnail $2 \
