@@ -2129,21 +2129,21 @@
    "desc": ""
   },
   "20": {
-   "action": 1,
+   "action": 21,
    "row": 2,
    "dev": 0,
    "col": 3,
    "intsetting4": 0,
-   "intsetting3": 0,
+   "intsetting3": 1,
    "intsetting2": 0,
    "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 87,
+   "keyCode": 46,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "+ (Plus) - NumPad"
+   "desc": "= (Equals)"
   },
   "19": {
    "action": 1,

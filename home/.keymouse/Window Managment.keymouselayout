@@ -1704,7 +1704,7 @@
    "desc": ""
   },
   "45": {
-   "action": 0,
+   "action": 1,
    "row": 3,
    "dev": 0,
    "col": 7,
@@ -1712,13 +1712,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 57,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Caps Lock"
   },
   "44": {
    "action": 0,
@@ -2044,7 +2044,7 @@
    "desc": "Not Assigned"
   },
   "25": {
-   "action": 0,
+   "action": 16,
    "row": 1,
    "dev": 0,
    "col": 4,
@@ -2052,13 +2052,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 105,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
-   "strsetting1": "",
-   "desc": "Not Assigned"
+   "strsetting1": "{runraw sudo -u jeremy -i \/Users\/jeremy\/.config\/pianobar\/control-pianobar.sh c}",
+   "desc": "F14"
   },
   "24": {
    "action": 0,
@@ -2146,7 +2146,7 @@
    "desc": "Not Assigned"
   },
   "19": {
-   "action": 0,
+   "action": 16,
    "row": 1,
    "dev": 0,
    "col": 3,
@@ -2154,13 +2154,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 104,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
-   "strsetting1": "",
-   "desc": "Not Assigned"
+   "strsetting1": "{runraw sudo -u jeremy -i \/Users\/jeremy\/.config\/pianobar\/control-pianobar.sh p}",
+   "desc": "F13"
   },
   "18": {
    "action": 0,
@@ -2248,7 +2248,7 @@
    "desc": "Not Assigned"
   },
   "13": {
-   "action": 0,
+   "action": 16,
    "row": 1,
    "dev": 0,
    "col": 2,
@@ -2256,13 +2256,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 106,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
-   "strsetting1": "",
-   "desc": "Not Assigned"
+   "strsetting1": "{runraw sudo -u jeremy -i \/Users\/jeremy\/.config\/pianobar\/control-pianobar.sh n}",
+   "desc": "F15"
   },
   "12": {
    "action": 0,
