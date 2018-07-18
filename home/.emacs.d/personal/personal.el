@@ -14,3 +14,10 @@
 (prelude-require-package 'isearch+)
 (eval-after-load "isearch" '(require 'isearch+))
 (global-unset-key (kbd "ESC ESC ESC"))
+
+(prelude-require-package 'string-inflection)
+(define-key global-map (kbd "s-b c") 'string-inflection-lower-camelcase)
+(define-key global-map (kbd "s-b C") 'string-inflection-camelcase)
+(define-key global-map (kbd "s-b s") 'string-inflection-underscore)
+(define-key global-map (kbd "s-b S") 'string-inflection-upcase)
+(define-key global-map (kbd "s-b k") 'string-inflection-kebab-case)

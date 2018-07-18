@@ -1,64 +1,64 @@
 {
  "version": 2,
  "keySet": "Standard",
- "name": "Window Managment",
+ "name": "Letters - Main",
  "keys": {
-  "143": {
-   "action": 1,
-   "row": 5,
-   "dev": 1,
-   "col": 12,
-   "intsetting4": 0,
-   "intsetting3": 0,
-   "intsetting2": 0,
-   "intsetting1": 0,
-   "keyType": 28,
-   "keyCode": 0,
-   "strsetting4": "",
-   "strsetting3": "",
-   "strsetting2": "",
-   "strsetting1": "",
-   "desc": ""
-  },
-  "142": {
-   "action": 1,
-   "row": 4,
-   "dev": 1,
-   "col": 12,
-   "intsetting4": 0,
-   "intsetting3": 0,
-   "intsetting2": 0,
-   "intsetting1": 0,
-   "keyType": 28,
-   "keyCode": 0,
-   "strsetting4": "",
-   "strsetting3": "",
-   "strsetting2": "",
-   "strsetting1": "",
-   "desc": ""
-  },
-  "141": {
-   "action": 1,
+  "135": {
+   "action": 8,
    "row": 3,
    "dev": 1,
-   "col": 12,
+   "col": 11,
    "intsetting4": 0,
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 28,
-   "keyCode": 0,
+   "keyType": 17,
+   "keyCode": 255,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
    "desc": ""
   },
-  "140": {
+  "134": {
    "action": 8,
    "row": 2,
    "dev": 1,
-   "col": 12,
+   "col": 11,
+   "intsetting4": 0,
+   "intsetting3": 0,
+   "intsetting2": 0,
+   "intsetting1": 0,
+   "keyType": 17,
+   "keyCode": 1,
+   "strsetting4": "",
+   "strsetting3": "",
+   "strsetting2": "",
+   "strsetting1": "",
+   "desc": ""
+  },
+  "133": {
+   "action": 8,
+   "row": 1,
+   "dev": 1,
+   "col": 11,
+   "intsetting4": 0,
+   "intsetting3": 0,
+   "intsetting2": 0,
+   "intsetting1": 0,
+   "keyType": 17,
+   "keyCode": 255,
+   "strsetting4": "",
+   "strsetting3": "",
+   "strsetting2": "",
+   "strsetting1": "",
+   "desc": "Scroll Down"
+  },
+  "132": {
+   "action": 8,
+   "row": 0,
+   "dev": 1,
+   "col": 11,
    "intsetting4": 0,
    "intsetting3": 0,
    "intsetting2": 0,
@@ -70,142 +70,6 @@
    "strsetting2": "",
    "strsetting1": "",
    "desc": "Scroll Up"
-  },
-  "139": {
-   "action": 1,
-   "row": 1,
-   "dev": 1,
-   "col": 12,
-   "intsetting4": 0,
-   "intsetting3": 0,
-   "intsetting2": 0,
-   "intsetting1": 0,
-   "keyType": 28,
-   "keyCode": 0,
-   "strsetting4": "",
-   "strsetting3": "",
-   "strsetting2": "",
-   "strsetting1": "",
-   "desc": ""
-  },
-  "138": {
-   "action": 1,
-   "row": 0,
-   "dev": 1,
-   "col": 12,
-   "intsetting4": 0,
-   "intsetting3": 0,
-   "intsetting2": 0,
-   "intsetting1": 0,
-   "keyType": 28,
-   "keyCode": 0,
-   "strsetting4": "",
-   "strsetting3": "",
-   "strsetting2": "",
-   "strsetting1": "",
-   "desc": ""
-  },
-  "137": {
-   "action": 1,
-   "row": 5,
-   "dev": 1,
-   "col": 11,
-   "intsetting4": 0,
-   "intsetting3": 0,
-   "intsetting2": 0,
-   "intsetting1": 0,
-   "keyType": 28,
-   "keyCode": 0,
-   "strsetting4": "",
-   "strsetting3": "",
-   "strsetting2": "",
-   "strsetting1": "",
-   "desc": ""
-  },
-  "136": {
-   "action": 1,
-   "row": 4,
-   "dev": 1,
-   "col": 11,
-   "intsetting4": 0,
-   "intsetting3": 0,
-   "intsetting2": 0,
-   "intsetting1": 0,
-   "keyType": 28,
-   "keyCode": 0,
-   "strsetting4": "",
-   "strsetting3": "",
-   "strsetting2": "",
-   "strsetting1": "",
-   "desc": ""
-  },
-  "135": {
-   "action": 0,
-   "row": 3,
-   "dev": 1,
-   "col": 11,
-   "intsetting4": 0,
-   "intsetting3": 0,
-   "intsetting2": 0,
-   "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
-   "strsetting4": "",
-   "strsetting3": "",
-   "strsetting2": "",
-   "strsetting1": "",
-   "desc": ""
-  },
-  "134": {
-   "action": 0,
-   "row": 2,
-   "dev": 1,
-   "col": 11,
-   "intsetting4": 0,
-   "intsetting3": 0,
-   "intsetting2": 0,
-   "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
-   "strsetting4": "",
-   "strsetting3": "",
-   "strsetting2": "",
-   "strsetting1": "",
-   "desc": ""
-  },
-  "133": {
-   "action": 0,
-   "row": 1,
-   "dev": 1,
-   "col": 11,
-   "intsetting4": 0,
-   "intsetting3": 0,
-   "intsetting2": 0,
-   "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
-   "strsetting4": "",
-   "strsetting3": "",
-   "strsetting2": "",
-   "strsetting1": "",
-   "desc": ""
-  },
-  "132": {
-   "action": 0,
-   "row": 0,
-   "dev": 1,
-   "col": 11,
-   "intsetting4": 0,
-   "intsetting3": 0,
-   "intsetting2": 0,
-   "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
-   "strsetting4": "",
-   "strsetting3": "",
-   "strsetting2": "",
-   "strsetting1": "",
-   "desc": ""
   },
   "131": {
    "action": 0,
@@ -239,7 +103,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "129": {
    "action": 0,
@@ -256,7 +120,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "128": {
    "action": 0,
@@ -273,7 +137,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "127": {
    "action": 0,
@@ -290,7 +154,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "126": {
    "action": 0,
@@ -307,7 +171,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "125": {
    "action": 0,
@@ -324,7 +188,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "124": {
    "action": 0,
@@ -358,7 +222,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "122": {
    "action": 0,
@@ -375,7 +239,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "121": {
    "action": 0,
@@ -392,7 +256,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "120": {
    "action": 0,
@@ -409,7 +273,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "119": {
    "action": 0,
@@ -426,7 +290,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "118": {
    "action": 0,
@@ -460,7 +324,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "116": {
    "action": 0,
@@ -477,7 +341,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "115": {
    "action": 0,
@@ -494,7 +358,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "114": {
    "action": 0,
@@ -511,7 +375,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "113": {
    "action": 0,
@@ -548,7 +412,7 @@
    "desc": ""
   },
   "111": {
-   "action": 0,
+   "action": 1,
    "row": 3,
    "dev": 1,
    "col": 7,
@@ -556,16 +420,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 26,
+   "keyCode": 57,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Caps Lock (Mac Only)"
   },
   "110": {
-   "action": 0,
+   "action": 12,
    "row": 2,
    "dev": 1,
    "col": 7,
@@ -573,16 +437,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 2,
+   "keyCode": 32,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Shift - Right"
   },
   "109": {
-   "action": 0,
+   "action": 1,
    "row": 1,
    "dev": 1,
    "col": 7,
@@ -590,16 +454,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 52,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "' (Apostrophe)"
   },
   "108": {
-   "action": 0,
+   "action": 1,
    "row": 0,
    "dev": 1,
    "col": 7,
@@ -607,13 +471,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 42,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Backspace"
   },
   "107": {
    "action": 0,
@@ -667,7 +531,7 @@
    "desc": ""
   },
   "104": {
-   "action": 0,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 6,
@@ -675,16 +539,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 56,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Slash"
   },
   "103": {
-   "action": 0,
+   "action": 1,
    "row": 1,
    "dev": 1,
    "col": 6,
@@ -692,16 +556,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 51,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "; (Semicolon)"
   },
   "102": {
-   "action": 0,
+   "action": 1,
    "row": 0,
    "dev": 1,
    "col": 6,
@@ -709,13 +573,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 19,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "P"
   },
   "101": {
    "action": 0,
@@ -752,7 +616,7 @@
    "desc": ""
   },
   "9": {
-   "action": 0,
+   "action": 9,
    "row": 3,
    "dev": 0,
    "col": 1,
@@ -760,16 +624,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 5,
+   "keyCode": 1,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Fn Blue"
   },
   "8": {
-   "action": 0,
+   "action": 1,
    "row": 2,
    "dev": 0,
    "col": 1,
@@ -777,16 +641,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 62,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "F5"
   },
   "7": {
-   "action": 0,
+   "action": 1,
    "row": 1,
    "dev": 0,
    "col": 1,
@@ -794,16 +658,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 60,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "F3"
   },
   "6": {
-   "action": 0,
+   "action": 1,
    "row": 0,
    "dev": 0,
    "col": 1,
@@ -811,13 +675,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 58,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "F1"
   },
   "5": {
    "action": 0,
@@ -834,10 +698,10 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "4": {
-   "action": 0,
+   "action": 12,
    "row": 4,
    "dev": 0,
    "col": 0,
@@ -845,16 +709,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 2,
+   "keyCode": 4,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "Alt - Left"
   },
   "3": {
-   "action": 0,
+   "action": 1,
    "row": 3,
    "dev": 0,
    "col": 0,
@@ -862,16 +726,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 43,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "Tab"
   },
   "2": {
-   "action": 0,
+   "action": 1,
    "row": 2,
    "dev": 0,
    "col": 0,
@@ -879,16 +743,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 63,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "F6"
   },
   "1": {
-   "action": 0,
+   "action": 1,
    "row": 1,
    "dev": 0,
    "col": 0,
@@ -896,16 +760,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 61,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "F4"
   },
   "0": {
-   "action": 0,
+   "action": 1,
    "row": 0,
    "dev": 0,
    "col": 0,
@@ -913,16 +777,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 59,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "F2"
   },
   "99": {
-   "action": 0,
+   "action": 7,
    "row": 3,
    "dev": 1,
    "col": 5,
@@ -930,64 +794,64 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 16,
+   "keyCode": 4,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Middle Click"
   },
   "98": {
-   "action": 21,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 5,
-   "intsetting4": 1,
-   "intsetting3": 1,
+   "intsetting4": 0,
+   "intsetting3": 0,
    "intsetting2": 0,
-   "intsetting1": 1,
+   "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 79,
+   "keyCode": 55,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Right Arrow"
+   "desc": ". (Period)"
   },
   "97": {
-   "action": 21,
+   "action": 1,
    "row": 1,
    "dev": 1,
    "col": 5,
-   "intsetting4": 1,
+   "intsetting4": 0,
    "intsetting3": 0,
-   "intsetting2": 1,
+   "intsetting2": 0,
    "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 79,
+   "keyCode": 15,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Right Arrow"
+   "desc": "L"
   },
   "96": {
-   "action": 21,
+   "action": 1,
    "row": 0,
    "dev": 1,
    "col": 5,
-   "intsetting4": 1,
+   "intsetting4": 0,
    "intsetting3": 0,
    "intsetting2": 0,
-   "intsetting1": 1,
+   "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 79,
+   "keyCode": 18,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Right Arrow"
+   "desc": "O"
   },
   "95": {
    "action": 0,
@@ -1031,7 +895,7 @@
    "intsetting4": 0,
    "intsetting3": 0,
    "intsetting2": 0,
-   "intsetting1": 0,
+   "intsetting1": 15,
    "keyType": 0,
    "keyCode": 0,
    "strsetting4": "",
@@ -1041,55 +905,55 @@
    "desc": ""
   },
   "92": {
-   "action": 21,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 4,
-   "intsetting4": 1,
+   "intsetting4": 0,
    "intsetting3": 0,
-   "intsetting2": 1,
+   "intsetting2": 0,
    "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 81,
+   "keyCode": 54,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Down Arrow"
+   "desc": ", (Comma)"
   },
   "91": {
-   "action": 21,
+   "action": 1,
    "row": 1,
    "dev": 1,
    "col": 4,
-   "intsetting4": 1,
+   "intsetting4": 0,
    "intsetting3": 0,
-   "intsetting2": 1,
+   "intsetting2": 0,
    "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 6,
+   "keyCode": 14,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "C"
+   "desc": "K"
   },
   "90": {
-   "action": 21,
+   "action": 1,
    "row": 0,
    "dev": 1,
    "col": 4,
-   "intsetting4": 1,
+   "intsetting4": 0,
    "intsetting3": 0,
-   "intsetting2": 1,
+   "intsetting2": 0,
    "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 82,
+   "keyCode": 12,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Up Arrow"
+   "desc": "I"
   },
   "89": {
    "action": 0,
@@ -1126,72 +990,72 @@
    "desc": ""
   },
   "87": {
-   "action": 0,
+   "action": 7,
    "row": 3,
    "dev": 1,
    "col": 3,
    "intsetting4": 0,
    "intsetting3": 0,
    "intsetting2": 0,
-   "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "intsetting1": 10,
+   "keyType": 16,
+   "keyCode": 2,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Right Click"
   },
   "86": {
-   "action": 21,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 3,
-   "intsetting4": 1,
-   "intsetting3": 1,
+   "intsetting4": 0,
+   "intsetting3": 0,
    "intsetting2": 0,
-   "intsetting1": 1,
+   "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 80,
+   "keyCode": 16,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Left Arrow"
+   "desc": "M"
   },
   "85": {
-   "action": 21,
+   "action": 1,
    "row": 1,
    "dev": 1,
    "col": 3,
-   "intsetting4": 1,
+   "intsetting4": 0,
    "intsetting3": 0,
-   "intsetting2": 1,
+   "intsetting2": 0,
    "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 80,
+   "keyCode": 13,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Left Arrow"
+   "desc": "J"
   },
   "84": {
-   "action": 21,
+   "action": 1,
    "row": 0,
    "dev": 1,
    "col": 3,
-   "intsetting4": 1,
+   "intsetting4": 0,
    "intsetting3": 0,
    "intsetting2": 0,
-   "intsetting1": 1,
+   "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 80,
+   "keyCode": 24,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Left Arrow"
+   "desc": "U"
   },
   "83": {
    "action": 0,
@@ -1228,7 +1092,7 @@
    "desc": ""
   },
   "81": {
-   "action": 0,
+   "action": 7,
    "row": 3,
    "dev": 1,
    "col": 2,
@@ -1236,64 +1100,64 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 16,
+   "keyCode": 1,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Left Click"
   },
   "80": {
-   "action": 21,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 2,
-   "intsetting4": 1,
+   "intsetting4": 0,
    "intsetting3": 0,
-   "intsetting2": 1,
-   "intsetting1": 1,
+   "intsetting2": 0,
+   "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 79,
+   "keyCode": 17,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Right Arrow"
+   "desc": "N"
   },
   "79": {
-   "action": 21,
+   "action": 1,
    "row": 1,
    "dev": 1,
    "col": 2,
-   "intsetting4": 1,
+   "intsetting4": 0,
    "intsetting3": 0,
-   "intsetting2": 1,
+   "intsetting2": 0,
    "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 9,
+   "keyCode": 11,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "F"
+   "desc": "H"
   },
   "78": {
-   "action": 21,
+   "action": 1,
    "row": 0,
    "dev": 1,
    "col": 2,
-   "intsetting4": 1,
+   "intsetting4": 0,
    "intsetting3": 0,
-   "intsetting2": 1,
-   "intsetting1": 1,
+   "intsetting2": 0,
+   "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 80,
+   "keyCode": 28,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Left Arrow"
+   "desc": "Y"
   },
   "77": {
    "action": 0,
@@ -1313,7 +1177,7 @@
    "desc": ""
   },
   "76": {
-   "action": 0,
+   "action": 12,
    "row": 4,
    "dev": 1,
    "col": 1,
@@ -1321,16 +1185,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 2,
+   "keyCode": 128,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Command (Mac) - Right"
   },
   "75": {
-   "action": 0,
+   "action": 1,
    "row": 3,
    "dev": 1,
    "col": 1,
@@ -1338,16 +1202,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 44,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Space"
   },
   "74": {
-   "action": 0,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 1,
@@ -1355,16 +1219,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 69,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "F12"
   },
   "73": {
-   "action": 0,
+   "action": 1,
    "row": 1,
    "dev": 1,
    "col": 1,
@@ -1372,16 +1236,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 67,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "F10"
   },
   "72": {
-   "action": 0,
+   "action": 1,
    "row": 0,
    "dev": 1,
    "col": 1,
@@ -1389,13 +1253,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 65,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "F8"
   },
   "71": {
    "action": 0,
@@ -1412,10 +1276,10 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "70": {
-   "action": 0,
+   "action": 12,
    "row": 4,
    "dev": 1,
    "col": 0,
@@ -1423,16 +1287,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 2,
+   "keyCode": 64,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Alt - Right"
   },
   "69": {
-   "action": 0,
+   "action": 1,
    "row": 3,
    "dev": 1,
    "col": 0,
@@ -1440,16 +1304,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 40,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Enter"
   },
   "68": {
-   "action": 0,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 0,
@@ -1457,16 +1321,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 68,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "F11"
   },
   "67": {
-   "action": 0,
+   "action": 1,
    "row": 1,
    "dev": 1,
    "col": 0,
@@ -1474,16 +1338,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 66,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "F9"
   },
   "66": {
-   "action": 0,
+   "action": 1,
    "row": 0,
    "dev": 1,
    "col": 0,
@@ -1491,13 +1355,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 64,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "F7"
   },
   "65": {
    "action": 0,
@@ -1531,7 +1395,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "63": {
    "action": 0,
@@ -1548,7 +1412,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "62": {
    "action": 0,
@@ -1565,7 +1429,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "61": {
    "action": 0,
@@ -1582,7 +1446,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "60": {
    "action": 0,
@@ -1599,7 +1463,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "59": {
    "action": 0,
@@ -1616,7 +1480,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "58": {
    "action": 0,
@@ -1667,7 +1531,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "55": {
    "action": 0,
@@ -1684,7 +1548,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "54": {
    "action": 0,
@@ -1701,7 +1565,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "53": {
    "action": 0,
@@ -1718,7 +1582,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "52": {
    "action": 0,
@@ -1769,7 +1633,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "49": {
    "action": 0,
@@ -1786,7 +1650,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "48": {
    "action": 0,
@@ -1803,7 +1667,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "47": {
    "action": 0,
@@ -1849,15 +1713,15 @@
    "intsetting2": 0,
    "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 57,
+   "keyCode": 41,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Caps Lock"
+   "desc": "Esc"
   },
   "44": {
-   "action": 0,
+   "action": 12,
    "row": 2,
    "dev": 0,
    "col": 7,
@@ -1865,16 +1729,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 2,
+   "keyCode": 2,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Shift - Left"
   },
   "43": {
-   "action": 0,
+   "action": 12,
    "row": 1,
    "dev": 0,
    "col": 7,
@@ -1882,16 +1746,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 2,
+   "keyCode": 1,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Ctrl - Left"
   },
   "42": {
-   "action": 0,
+   "action": 1,
    "row": 0,
    "dev": 0,
    "col": 7,
@@ -1899,13 +1763,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 53,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "` (Accent)"
   },
   "41": {
    "action": 0,
@@ -1922,7 +1786,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "40": {
    "action": 0,
@@ -1959,7 +1823,7 @@
    "desc": ""
   },
   "38": {
-   "action": 0,
+   "action": 1,
    "row": 2,
    "dev": 0,
    "col": 6,
@@ -1967,16 +1831,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 29,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Z"
   },
   "37": {
-   "action": 0,
+   "action": 1,
    "row": 1,
    "dev": 0,
    "col": 6,
@@ -1984,16 +1848,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 4,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "A"
   },
   "36": {
-   "action": 0,
+   "action": 1,
    "row": 0,
    "dev": 0,
    "col": 6,
@@ -2001,13 +1865,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 20,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Q"
   },
   "35": {
    "action": 0,
@@ -2044,7 +1908,7 @@
    "desc": ""
   },
   "33": {
-   "action": 0,
+   "action": 5,
    "row": 3,
    "dev": 0,
    "col": 5,
@@ -2052,16 +1916,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 19,
+   "keyCode": 1,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "Mouse Freeze"
   },
   "32": {
-   "action": 0,
+   "action": 1,
    "row": 2,
    "dev": 0,
    "col": 5,
@@ -2069,16 +1933,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 27,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "X"
   },
   "31": {
-   "action": 0,
+   "action": 1,
    "row": 1,
    "dev": 0,
    "col": 5,
@@ -2086,16 +1950,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 22,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "S"
   },
   "30": {
-   "action": 0,
+   "action": 1,
    "row": 0,
    "dev": 0,
    "col": 5,
@@ -2103,13 +1967,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 26,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "W"
   },
   "29": {
    "action": 0,
@@ -2146,7 +2010,7 @@
    "desc": ""
   },
   "27": {
-   "action": 0,
+   "action": 9,
    "row": 3,
    "dev": 0,
    "col": 4,
@@ -2154,16 +2018,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 5,
+   "keyCode": 4,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "Fn Green"
   },
   "26": {
-   "action": 0,
+   "action": 1,
    "row": 2,
    "dev": 0,
    "col": 4,
@@ -2171,13 +2035,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 6,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "C"
   },
   "25": {
    "action": 1,
@@ -2189,18 +2053,35 @@
    "intsetting2": 0,
    "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 104,
+   "keyCode": 7,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "F13"
+   "desc": "D"
   },
   "24": {
-   "action": 0,
+   "action": 1,
    "row": 0,
    "dev": 0,
    "col": 4,
+   "intsetting4": 0,
+   "intsetting3": 0,
+   "intsetting2": 0,
+   "intsetting1": 0,
+   "keyType": 1,
+   "keyCode": 8,
+   "strsetting4": "",
+   "strsetting3": "",
+   "strsetting2": "",
+   "strsetting1": "",
+   "desc": "E"
+  },
+  "23": {
+   "action": 0,
+   "row": 5,
+   "dev": 0,
+   "col": 3,
    "intsetting4": 0,
    "intsetting3": 0,
    "intsetting2": 0,
@@ -2213,25 +2094,8 @@
    "strsetting1": "",
    "desc": ""
   },
-  "23": {
-   "action": 9,
-   "row": 5,
-   "dev": 0,
-   "col": 3,
-   "intsetting4": 0,
-   "intsetting3": 0,
-   "intsetting2": 0,
-   "intsetting1": 0,
-   "keyType": 22,
-   "keyCode": 1,
-   "strsetting4": "",
-   "strsetting3": "",
-   "strsetting2": "",
-   "strsetting1": "",
-   "desc": "Set FN Blue"
-  },
   "22": {
-   "action": 9,
+   "action": 0,
    "row": 4,
    "dev": 0,
    "col": 3,
@@ -2239,16 +2103,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 22,
-   "keyCode": 2,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Set FN Yellow"
+   "desc": ""
   },
   "21": {
-   "action": 0,
+   "action": 9,
    "row": 3,
    "dev": 0,
    "col": 3,
@@ -2256,16 +2120,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 5,
+   "keyCode": 3,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "Fn Red"
   },
   "20": {
-   "action": 0,
+   "action": 1,
    "row": 2,
    "dev": 0,
    "col": 3,
@@ -2273,13 +2137,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 25,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "V"
   },
   "19": {
    "action": 1,
@@ -2291,15 +2155,15 @@
    "intsetting2": 0,
    "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 105,
+   "keyCode": 9,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "F14"
+   "desc": "F"
   },
   "18": {
-   "action": 0,
+   "action": 1,
    "row": 0,
    "dev": 0,
    "col": 3,
@@ -2307,13 +2171,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 21,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "R"
   },
   "17": {
    "action": 0,
@@ -2347,10 +2211,10 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "15": {
-   "action": 0,
+   "action": 9,
    "row": 3,
    "dev": 0,
    "col": 2,
@@ -2358,16 +2222,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 5,
+   "keyCode": 2,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "Fn Yellow"
   },
   "14": {
-   "action": 0,
+   "action": 1,
    "row": 2,
    "dev": 0,
    "col": 2,
@@ -2375,13 +2239,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 5,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "B"
   },
   "13": {
    "action": 1,
@@ -2393,15 +2257,15 @@
    "intsetting2": 0,
    "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 106,
+   "keyCode": 10,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "F15"
+   "desc": "G"
   },
   "12": {
-   "action": 0,
+   "action": 1,
    "row": 0,
    "dev": 0,
    "col": 2,
@@ -2409,13 +2273,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 23,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "T"
   },
   "11": {
    "action": 0,
@@ -2435,7 +2299,7 @@
    "desc": ""
   },
   "10": {
-   "action": 0,
+   "action": 12,
    "row": 4,
    "dev": 0,
    "col": 1,
@@ -2443,13 +2307,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 2,
+   "keyCode": 8,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "Command (Mac) - Left"
   }
  }
 }
