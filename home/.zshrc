@@ -50,7 +50,7 @@ ZSH_THEME="cyborg"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git jump emacs colored-man-pages brew osx ssh-agent nyan
+plugins=(git jump emacs colored-man-pages brew osx ssh-agent
          extract bower mvn node nvm bundler rvm gem rails rake pip rand-quote)
 
 # User configuration
@@ -90,6 +90,7 @@ source $ZSH/oh-my-zsh.sh
 alias j=jump
 alias agr='alias | grep'
 
+export LESS='-i -J -R -W -z-4'
 export LESSOPEN="| pygmentize -f terminal256 %s"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

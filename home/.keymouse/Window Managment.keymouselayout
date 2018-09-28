@@ -55,7 +55,7 @@
    "desc": ""
   },
   "140": {
-   "action": 8,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 12,
@@ -63,13 +63,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 1,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Up"
+   "desc": "Normal Mouse"
   },
   "139": {
    "action": 1,
@@ -120,7 +120,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Normal Mouse"
   },
   "136": {
    "action": 1,
@@ -137,7 +137,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Normal Mouse"
   },
   "135": {
    "action": 0,

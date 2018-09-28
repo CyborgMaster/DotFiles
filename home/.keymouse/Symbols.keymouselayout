@@ -4,7 +4,7 @@
  "name": "Symbols",
  "keys": {
   "143": {
-   "action": 8,
+   "action": 1,
    "row": 5,
    "dev": 1,
    "col": 12,
@@ -12,16 +12,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 2,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Right"
+   "desc": "Normal Mouse"
   },
   "142": {
-   "action": 8,
+   "action": 1,
    "row": 4,
    "dev": 1,
    "col": 12,
@@ -29,16 +29,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 3,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Left"
+   "desc": "Normal Mouse"
   },
   "141": {
-   "action": 8,
+   "action": 1,
    "row": 3,
    "dev": 1,
    "col": 12,
@@ -46,16 +46,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 255,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Down"
+   "desc": "Normal Mouse"
   },
   "140": {
-   "action": 8,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 12,
@@ -63,16 +63,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 1,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Up"
+   "desc": "Normal Mouse"
   },
   "139": {
-   "action": 8,
+   "action": 1,
    "row": 1,
    "dev": 1,
    "col": 12,
@@ -80,16 +80,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 2,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Right"
+   "desc": "Normal Mouse"
   },
   "138": {
-   "action": 8,
+   "action": 1,
    "row": 0,
    "dev": 1,
    "col": 12,
@@ -97,16 +97,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 3,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Left"
+   "desc": "Normal Mouse"
   },
   "137": {
-   "action": 8,
+   "action": 1,
    "row": 5,
    "dev": 1,
    "col": 11,
@@ -114,16 +114,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 255,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Down"
+   "desc": "Normal Mouse"
   },
   "136": {
-   "action": 8,
+   "action": 1,
    "row": 4,
    "dev": 1,
    "col": 11,
@@ -131,13 +131,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 1,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Up"
+   "desc": "Normal Mouse"
   },
   "135": {
    "action": 8,
