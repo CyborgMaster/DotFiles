@@ -55,7 +55,7 @@ plugins=(git jump emacs colored-man-pages brew osx ssh-agent
 
 # User configuration
 
-export PATH="/Users/jeremy/bin:/Users/jeremy/.jenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin"
+export PATH="/Users/jeremy/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin"
 export PATH=~/Library/Python/2.7/bin:$PATH
 export HOMEBREW_GITHUB_API_TOKEN="c99aa2bfcfc4f2ca3f66f076b985a29d41f50d3c"
 
@@ -130,3 +130,25 @@ alias emacs="emacsclient"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# Setup jenv
+eval export PATH="/Users/jeremy/.jenv/shims:${PATH}"
+export JENV_SHELL=zsh
+export JENV_LOADED=1
+unset JAVA_HOME
+source '/usr/local/Cellar/jenv/0.5.1/libexec/libexec/../completions/jenv.zsh'
+jenv rehash 2>/dev/null
+jenv() {
+  typeset command
+  command="$1"
+  if [ "$#" -gt 0 ]; then
+    shift
+  fi
+
+  case "$command" in
+  enable-plugin|rehash|shell|shell-options)
+    eval `jenv "sh-$command" "$@"`;;
+  *)
+    command jenv "$command" "$@";;
+  esac
+}
