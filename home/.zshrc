@@ -123,3 +123,4 @@ JQ
         sed $'s/\t/    /g' | # replace tabs with space to get valid YAML
         yq -y $jq_cmd
 }
+alias git-unpushed='git log --branches --not --remotes --simplify-by-decoration --decorate --oneline'

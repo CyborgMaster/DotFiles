@@ -1,4 +1,5 @@
 {
+ "deviceType": "KeyMouse Alpha",
  "version": 2,
  "keySet": "Standard",
  "name": "Window Managment",
@@ -701,21 +702,21 @@
    "desc": ""
   },
   "102": {
-   "action": 0,
+   "action": 21,
    "row": 0,
    "dev": 1,
    "col": 6,
-   "intsetting4": 0,
+   "intsetting4": 1,
    "intsetting3": 0,
-   "intsetting2": 0,
-   "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "intsetting2": 1,
+   "intsetting1": 1,
+   "keyType": 1,
+   "keyCode": 15,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "L"
   },
   "101": {
    "action": 0,

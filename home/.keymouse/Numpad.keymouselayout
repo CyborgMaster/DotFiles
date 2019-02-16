@@ -1,4 +1,5 @@
 {
+ "deviceType": "KeyMouse Alpha",
  "version": 2,
  "keySet": "Standard",
  "name": "Numpad",
@@ -565,7 +566,7 @@
    "desc": "Num Lock"
   },
   "110": {
-   "action": 0,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 7,
@@ -573,13 +574,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 54,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": ", (Comma)"
   },
   "109": {
    "action": 1,
@@ -1279,7 +1280,7 @@
    "desc": "(Asterisk) (Shift + 8)"
   },
   "78": {
-   "action": 0,
+   "action": 1,
    "row": 0,
    "dev": 1,
    "col": 2,
@@ -1287,13 +1288,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 130,
+   "keyCode": 51,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Colon"
   },
   "77": {
    "action": 0,
