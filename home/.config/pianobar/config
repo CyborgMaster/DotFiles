@@ -1,0 +1,5 @@
+user=jeremy.mickelson@gmail.com
+password_command=cat ~/.config/pianobar/password.txt
+audio_quality = high
+autostart_station = 1270725379650761484
+buffer_seconds = 600

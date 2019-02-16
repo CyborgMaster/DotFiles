@@ -126,7 +126,7 @@ alias git-unpushed='git log --branches --not --remotes --simplify-by-decoration 
 
 # This seems to fix a bug with the oh-my-zsh plugin that causes files to open in
 # the terminal
-alias emacs="emacsclient"
+alias emacs="emacsclient --no-wait"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
