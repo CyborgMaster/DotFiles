@@ -93,7 +93,6 @@ alias agr='alias | grep'
 export LESS='-i -J -R -W -z-4'
 export LESSOPEN="| pygmentize -f terminal256 %s"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$HOME/.cargo/bin:$PATH"
 
 optimize-image() {
@@ -128,3 +127,6 @@ alias git-unpushed='git log --branches --not --remotes --simplify-by-decoration 
 # This seems to fix a bug with the oh-my-zsh plugin that causes files to open in
 # the terminal
 alias emacs="emacsclient"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
