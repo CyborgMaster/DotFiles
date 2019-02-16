@@ -124,3 +124,7 @@ JQ
         yq -y $jq_cmd
 }
 alias git-unpushed='git log --branches --not --remotes --simplify-by-decoration --decorate --oneline'
+
+# This seems to fix a bug with the oh-my-zsh plugin that causes files to open in
+# the terminal
+alias emacs="emacsclient"
