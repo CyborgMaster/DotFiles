@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+require 'optparse'
+
+options = ARGV.getopts 'i:t:', 'hint:'
+options.delete 't' # -t is the timeout value, growl doesn't have this
+options['t'] = ARGV.shift if ARGV.length > 1
+options['m'] = ARGV.shift
+
+opt_str = ''
+
+opt_str += %[ -message  "#{options['m']}"] if options['m'] # message
+opt_str += %[ -title "#{options['t']}"] if options['t']
+opt_str += %[ -appIcon "#{options['i']}"] if options['i']
+
+system 'terminal-notifier' + opt_str
