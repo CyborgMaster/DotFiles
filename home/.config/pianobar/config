@@ -1,5 +1,6 @@
 user=jeremy.mickelson@gmail.com
 password_command=cat ~/.config/pianobar/password.txt
+volume=-10
 audio_quality = high
 autostart_station = 1270725379650761484
 event_command = /Users/jeremy/.config/pianobar/pianobar-notify.sh
