@@ -57,7 +57,6 @@ plugins=(git jump emacs colored-man-pages brew osx ssh-agent
 
 export PATH="/Users/jeremy/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin"
 export PATH=~/Library/Python/2.7/bin:$PATH
-export HOMEBREW_GITHUB_API_TOKEN="c99aa2bfcfc4f2ca3f66f076b985a29d41f50d3c"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -157,3 +156,6 @@ jenv() {
 # https://blog.phusion.nl/2017/10/13/why-ruby-app-servers-break-on-macos-high-
 # sierra-and-what-can-be-done-about-it/
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+# Secrets that shouldn't be committed to source control
+source '/Users/jeremy/secrets.sh'
