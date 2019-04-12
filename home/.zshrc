@@ -159,3 +159,6 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # Secrets that shouldn't be committed to source control
 source '/Users/jeremy/secrets.sh'
+
+# GNU utils path overrides
+PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"

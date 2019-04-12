@@ -1025,7 +1025,7 @@
    "desc": ""
   },
   "93": {
-   "action": 0,
+   "action": 5,
    "row": 3,
    "dev": 1,
    "col": 4,
@@ -1033,13 +1033,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 15,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 19,
+   "keyCode": 5,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Mouse Freeze"
   },
   "92": {
    "action": 1,
