@@ -50,8 +50,8 @@ ZSH_THEME="cyborg"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git jump emacs colored-man-pages brew osx ssh-agent
-         extract bower mvn node nvm bundler rvm gem rails rake pip rand-quote)
+plugins=(git jump emacs colored-man-pages brew osx ssh-agent extract bower mvn
+         node nvm bundler rvm gem rails rake pip rand-quote systemadmin)
 
 # User configuration
 
@@ -162,3 +162,12 @@ source '/Users/jeremy/secrets.sh'
 
 # GNU utils path overrides
 PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
+
+export AWS_DEFAULT_PROFILE=sts
+
+alias advm_pass="lpass show 'AllyDVM Google' --password -c"
+
+if [ `launchctl limit maxfiles | awk '{print $2}'` = 256 ]; then
+    echo "increasing maxfiles..."
+    sudo launchctl limit maxfiles 65536 200000
+fi
