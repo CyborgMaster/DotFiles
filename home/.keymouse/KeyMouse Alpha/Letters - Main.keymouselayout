@@ -753,7 +753,7 @@
    "desc": ""
   },
   "9": {
-   "action": 9,
+   "action": 1,
    "row": 3,
    "dev": 0,
    "col": 1,
@@ -761,16 +761,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 5,
-   "keyCode": 1,
+   "keyType": 1,
+   "keyCode": 40,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Fn Blue"
+   "desc": "Enter"
   },
   "8": {
-   "action": 1,
+   "action": 12,
    "row": 2,
    "dev": 0,
    "col": 1,
@@ -778,16 +778,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 1,
-   "keyCode": 62,
+   "keyType": 2,
+   "keyCode": 4,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "F5"
+   "desc": "Alt - Left (Both)"
   },
   "7": {
-   "action": 1,
+   "action": 12,
    "row": 1,
    "dev": 0,
    "col": 1,
@@ -795,16 +795,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 1,
-   "keyCode": 60,
+   "keyType": 2,
+   "keyCode": 1,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "F3"
+   "desc": "Ctrl - Left (Both)"
   },
   "6": {
-   "action": 1,
+   "action": 12,
    "row": 0,
    "dev": 0,
    "col": 1,
@@ -812,13 +812,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 1,
-   "keyCode": 58,
+   "keyType": 2,
+   "keyCode": 8,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "F1"
+   "desc": "Command (Mac) - Left (Both)"
   },
   "5": {
    "action": 0,
@@ -847,15 +847,15 @@
    "intsetting2": 0,
    "intsetting1": 0,
    "keyType": 2,
-   "keyCode": 4,
+   "keyCode": 1,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Alt - Left"
+   "desc": "Ctrl - Left (Both)"
   },
   "3": {
-   "action": 1,
+   "action": 9,
    "row": 3,
    "dev": 0,
    "col": 0,
@@ -863,16 +863,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 1,
-   "keyCode": 43,
+   "keyType": 5,
+   "keyCode": 1,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Tab"
+   "desc": "Fn Blue"
   },
   "2": {
-   "action": 1,
+   "action": 0,
    "row": 2,
    "dev": 0,
    "col": 0,
@@ -880,16 +880,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 1,
-   "keyCode": 63,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "F6"
+   "desc": ""
   },
   "1": {
-   "action": 1,
+   "action": 0,
    "row": 1,
    "dev": 0,
    "col": 0,
@@ -897,16 +897,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 1,
-   "keyCode": 61,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "F4"
+   "desc": ""
   },
   "0": {
-   "action": 1,
+   "action": 0,
    "row": 0,
    "dev": 0,
    "col": 0,
@@ -914,13 +914,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 1,
-   "keyCode": 59,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "F2"
+   "desc": ""
   },
   "99": {
    "action": 7,
@@ -1348,7 +1348,7 @@
    "desc": "Space"
   },
   "74": {
-   "action": 1,
+   "action": 12,
    "row": 2,
    "dev": 1,
    "col": 1,
@@ -1356,16 +1356,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 1,
-   "keyCode": 69,
+   "keyType": 2,
+   "keyCode": 64,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "F12"
+   "desc": "Alt - Right (Both)"
   },
   "73": {
-   "action": 1,
+   "action": 12,
    "row": 1,
    "dev": 1,
    "col": 1,
@@ -1373,16 +1373,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 1,
-   "keyCode": 67,
+   "keyType": 2,
+   "keyCode": 16,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "F10"
+   "desc": "Ctrl - Right (Both)"
   },
   "72": {
-   "action": 1,
+   "action": 12,
    "row": 0,
    "dev": 1,
    "col": 1,
@@ -1390,13 +1390,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 1,
-   "keyCode": 65,
+   "keyType": 2,
+   "keyCode": 128,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "F8"
+   "desc": "Command (Mac) - Right (Both)"
   },
   "71": {
    "action": 0,
@@ -1425,15 +1425,15 @@
    "intsetting2": 0,
    "intsetting1": 0,
    "keyType": 2,
-   "keyCode": 64,
+   "keyCode": 16,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Alt - Right"
+   "desc": "Ctrl - Right (Both)"
   },
   "69": {
-   "action": 1,
+   "action": 9,
    "row": 3,
    "dev": 1,
    "col": 0,
@@ -1441,16 +1441,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 1,
-   "keyCode": 40,
+   "keyType": 5,
+   "keyCode": 1,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Enter"
+   "desc": "Fn Blue"
   },
   "68": {
-   "action": 1,
+   "action": 0,
    "row": 2,
    "dev": 1,
    "col": 0,
@@ -1458,16 +1458,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 1,
-   "keyCode": 68,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "F11"
+   "desc": ""
   },
   "67": {
-   "action": 1,
+   "action": 0,
    "row": 1,
    "dev": 1,
    "col": 0,
@@ -1475,16 +1475,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 1,
-   "keyCode": 66,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "F9"
+   "desc": ""
   },
   "66": {
-   "action": 1,
+   "action": 0,
    "row": 0,
    "dev": 1,
    "col": 0,
@@ -1492,13 +1492,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 1,
-   "keyCode": 64,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "F7"
+   "desc": ""
   },
   "65": {
    "action": 0,
@@ -1875,7 +1875,7 @@
    "desc": "Shift - Left"
   },
   "43": {
-   "action": 12,
+   "action": 1,
    "row": 1,
    "dev": 0,
    "col": 7,
@@ -1883,13 +1883,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 2,
-   "keyCode": 1,
+   "keyType": 1,
+   "keyCode": 43,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Ctrl - Left"
+   "desc": "Tab"
   },
   "42": {
    "action": 1,
@@ -2059,7 +2059,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse Freeze"
+   "desc": "Mouse Freeze (Both)"
   },
   "32": {
    "action": 1,
@@ -2147,7 +2147,7 @@
    "desc": ""
   },
   "27": {
-   "action": 10,
+   "action": 0,
    "row": 3,
    "dev": 0,
    "col": 4,
@@ -2155,13 +2155,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 22,
-   "keyCode": 4,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Fn Green Lock"
+   "desc": ""
   },
   "26": {
    "action": 1,

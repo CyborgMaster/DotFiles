@@ -5,7 +5,7 @@
  "name": "Numpad",
  "keys": {
   "143": {
-   "action": 8,
+   "action": 1,
    "row": 5,
    "dev": 1,
    "col": 12,
@@ -13,16 +13,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 2,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Right"
+   "desc": "Normal Mouse"
   },
   "142": {
-   "action": 8,
+   "action": 1,
    "row": 4,
    "dev": 1,
    "col": 12,
@@ -30,16 +30,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 3,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Left"
+   "desc": "Normal Mouse"
   },
   "141": {
-   "action": 8,
+   "action": 1,
    "row": 3,
    "dev": 1,
    "col": 12,
@@ -47,16 +47,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 255,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Down"
+   "desc": "Normal Mouse"
   },
   "140": {
-   "action": 8,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 12,
@@ -64,16 +64,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 1,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Up"
+   "desc": "Normal Mouse"
   },
   "139": {
-   "action": 8,
+   "action": 1,
    "row": 1,
    "dev": 1,
    "col": 12,
@@ -81,16 +81,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 2,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Right"
+   "desc": "Normal Mouse"
   },
   "138": {
-   "action": 8,
+   "action": 1,
    "row": 0,
    "dev": 1,
    "col": 12,
@@ -98,16 +98,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 3,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Left"
+   "desc": "Normal Mouse"
   },
   "137": {
-   "action": 8,
+   "action": 1,
    "row": 5,
    "dev": 1,
    "col": 11,
@@ -115,16 +115,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 255,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Down"
+   "desc": "Normal Mouse"
   },
   "136": {
-   "action": 8,
+   "action": 1,
    "row": 4,
    "dev": 1,
    "col": 11,
@@ -132,13 +132,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 1,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Up"
+   "desc": "Normal Mouse"
   },
   "135": {
    "action": 3,
@@ -155,7 +155,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Volume Down"
+   "desc": "Volume Down (Old)"
   },
   "134": {
    "action": 3,
@@ -172,7 +172,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Volume Up"
+   "desc": "Volume Up (Old)"
   },
   "133": {
    "action": 2,
@@ -557,13 +557,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 1,
-   "keyCode": 83,
+   "keyType": 114,
+   "keyCode": 33,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Num Lock"
+   "desc": "$ (Dollar Sign) (Shift + 4)"
   },
   "110": {
    "action": 1,
@@ -784,7 +784,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "7": {
    "action": 0,
@@ -801,7 +801,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "6": {
    "action": 0,
@@ -818,7 +818,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "5": {
    "action": 0,
@@ -886,7 +886,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "1": {
    "action": 0,
@@ -903,7 +903,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "0": {
    "action": 0,
@@ -920,7 +920,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "99": {
    "action": 0,
@@ -1416,7 +1416,7 @@
    "desc": "Not Assigned"
   },
   "70": {
-   "action": 10,
+   "action": 0,
    "row": 4,
    "dev": 1,
    "col": 0,
@@ -1424,13 +1424,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 22,
+   "keyType": 0,
    "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Fn Default Lock"
+   "desc": ""
   },
   "69": {
    "action": 0,
@@ -1960,7 +1960,7 @@
    "desc": ""
   },
   "38": {
-   "action": 0,
+   "action": 1,
    "row": 2,
    "dev": 0,
    "col": 6,
@@ -1968,13 +1968,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 83,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Num Lock"
   },
   "37": {
    "action": 0,
@@ -2076,7 +2076,7 @@
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": ""
   },
   "31": {
    "action": 0,

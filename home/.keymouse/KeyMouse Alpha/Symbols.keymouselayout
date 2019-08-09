@@ -1,4 +1,5 @@
 {
+ "deviceType": "KeyMouse Alpha",
  "version": 2,
  "keySet": "Standard",
  "name": "Symbols",
@@ -548,7 +549,7 @@
    "desc": ""
   },
   "111": {
-   "action": 0,
+   "action": 10,
    "row": 3,
    "dev": 1,
    "col": 7,
@@ -556,13 +557,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 22,
+   "keyCode": 1,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Fn Blue Lock"
   },
   "110": {
    "action": 0,
@@ -769,7 +770,7 @@
    "desc": ""
   },
   "8": {
-   "action": 6,
+   "action": 0,
    "row": 2,
    "dev": 0,
    "col": 1,
@@ -777,16 +778,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 144,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 3200"
+   "desc": ""
   },
   "7": {
-   "action": 6,
+   "action": 0,
    "row": 1,
    "dev": 0,
    "col": 1,
@@ -794,16 +795,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 140,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 2400"
+   "desc": ""
   },
   "6": {
-   "action": 6,
+   "action": 0,
    "row": 0,
    "dev": 0,
    "col": 1,
@@ -811,13 +812,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 134,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 1200"
+   "desc": ""
   },
   "5": {
    "action": 0,
@@ -871,7 +872,7 @@
    "desc": ""
   },
   "2": {
-   "action": 6,
+   "action": 0,
    "row": 2,
    "dev": 0,
    "col": 0,
@@ -879,16 +880,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 132,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 800"
+   "desc": ""
   },
   "1": {
-   "action": 6,
+   "action": 0,
    "row": 1,
    "dev": 0,
    "col": 0,
@@ -896,16 +897,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 130,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 400"
+   "desc": ""
   },
   "0": {
-   "action": 6,
+   "action": 0,
    "row": 0,
    "dev": 0,
    "col": 0,
@@ -913,13 +914,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 129,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 200"
+   "desc": ""
   },
   "99": {
    "action": 0,
@@ -1347,7 +1348,7 @@
    "desc": ""
   },
   "74": {
-   "action": 6,
+   "action": 0,
    "row": 2,
    "dev": 1,
    "col": 1,
@@ -1355,16 +1356,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 144,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 3200"
+   "desc": ""
   },
   "73": {
-   "action": 6,
+   "action": 0,
    "row": 1,
    "dev": 1,
    "col": 1,
@@ -1372,16 +1373,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 140,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 2400"
+   "desc": ""
   },
   "72": {
-   "action": 6,
+   "action": 0,
    "row": 0,
    "dev": 1,
    "col": 1,
@@ -1389,13 +1390,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 134,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 1200"
+   "desc": ""
   },
   "71": {
    "action": 10,
@@ -1449,7 +1450,7 @@
    "desc": ""
   },
   "68": {
-   "action": 6,
+   "action": 0,
    "row": 2,
    "dev": 1,
    "col": 0,
@@ -1457,16 +1458,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 132,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 800"
+   "desc": ""
   },
   "67": {
-   "action": 6,
+   "action": 0,
    "row": 1,
    "dev": 1,
    "col": 0,
@@ -1474,16 +1475,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 130,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 400"
+   "desc": ""
   },
   "66": {
-   "action": 6,
+   "action": 0,
    "row": 0,
    "dev": 1,
    "col": 0,
@@ -1491,13 +1492,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 129,
+   "keyType": 0,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 200"
+   "desc": ""
   },
   "65": {
    "action": 0,
@@ -1840,7 +1841,7 @@
    "desc": ""
   },
   "45": {
-   "action": 0,
+   "action": 10,
    "row": 3,
    "dev": 0,
    "col": 7,
@@ -1848,13 +1849,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
+   "keyType": 22,
    "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Fn Default Lock"
   },
   "44": {
    "action": 0,
@@ -1900,12 +1901,12 @@
    "intsetting2": 0,
    "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 53,
+   "keyCode": 41,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "` (Accent)"
+   "desc": "Esc"
   },
   "41": {
    "action": 0,
