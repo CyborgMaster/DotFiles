@@ -55,7 +55,7 @@ plugins=(git jump emacs colored-man-pages brew osx ssh-agent extract bower mvn
 
 # User configuration
 
-export PATH="/Users/jeremy/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin"
+export PATH=/Users/jeremy/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin:$PATH
 export PATH=~/Library/Python/2.7/bin:$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
