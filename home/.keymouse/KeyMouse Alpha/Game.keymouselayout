@@ -549,7 +549,7 @@
    "desc": ""
   },
   "111": {
-   "action": 0,
+   "action": 10,
    "row": 3,
    "dev": 1,
    "col": 7,
@@ -557,13 +557,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 22,
+   "keyCode": 4,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Fn Green Lock"
   },
   "110": {
    "action": 0,

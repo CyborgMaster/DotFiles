@@ -141,7 +141,7 @@
    "desc": "Normal Mouse"
   },
   "135": {
-   "action": 3,
+   "action": 1,
    "row": 3,
    "dev": 1,
    "col": 11,
@@ -149,16 +149,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 3,
-   "keyCode": 5,
+   "keyType": 48,
+   "keyCode": 234,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Volume Down (Old)"
+   "desc": "Volume Down"
   },
   "134": {
-   "action": 3,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 11,
@@ -166,13 +166,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 3,
-   "keyCode": 4,
+   "keyType": 48,
+   "keyCode": 233,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Volume Up (Old)"
+   "desc": "Volume Up"
   },
   "133": {
    "action": 2,
@@ -464,7 +464,7 @@
    "desc": "Not Assigned"
   },
   "116": {
-   "action": 0,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 8,
@@ -472,16 +472,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 32,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "3"
   },
   "115": {
-   "action": 0,
+   "action": 1,
    "row": 1,
    "dev": 1,
    "col": 8,
@@ -489,16 +489,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 35,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "6"
   },
   "114": {
-   "action": 0,
+   "action": 1,
    "row": 0,
    "dev": 1,
    "col": 8,
@@ -506,13 +506,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 38,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "9"
   },
   "113": {
    "action": 0,
@@ -2147,7 +2147,7 @@
    "desc": ""
   },
   "27": {
-   "action": 0,
+   "action": 10,
    "row": 3,
    "dev": 0,
    "col": 4,
@@ -2155,13 +2155,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
+   "keyType": 22,
    "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Not Assigned"
+   "desc": "Fn Default Lock"
   },
   "26": {
    "action": 1,

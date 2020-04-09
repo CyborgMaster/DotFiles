@@ -447,7 +447,7 @@
    "desc": ""
   },
   "117": {
-   "action": 0,
+   "action": 7,
    "row": 3,
    "dev": 1,
    "col": 8,
@@ -455,16 +455,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 16,
+   "keyCode": 4,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Middle Click"
   },
   "116": {
-   "action": 0,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 8,
@@ -472,16 +472,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 55,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": ". (Period)"
   },
   "115": {
-   "action": 0,
+   "action": 1,
    "row": 1,
    "dev": 1,
    "col": 8,
@@ -489,16 +489,16 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 15,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "L"
   },
   "114": {
-   "action": 0,
+   "action": 1,
    "row": 0,
    "dev": 1,
    "col": 8,
@@ -506,13 +506,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 18,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "O"
   },
   "113": {
    "action": 0,
@@ -2147,7 +2147,7 @@
    "desc": ""
   },
   "27": {
-   "action": 0,
+   "action": 9,
    "row": 3,
    "dev": 0,
    "col": 4,
@@ -2155,13 +2155,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 5,
+   "keyCode": 5,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Fn Orange"
   },
   "26": {
    "action": 1,
