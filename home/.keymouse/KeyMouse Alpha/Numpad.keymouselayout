@@ -566,21 +566,21 @@
    "desc": "$ (Dollar Sign) (Shift + 4)"
   },
   "110": {
-   "action": 1,
+   "action": 21,
    "row": 2,
    "dev": 1,
    "col": 7,
    "intsetting4": 0,
-   "intsetting3": 0,
+   "intsetting3": 1,
    "intsetting2": 0,
    "intsetting1": 0,
    "keyType": 1,
-   "keyCode": 54,
+   "keyCode": 51,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ", (Comma)"
+   "desc": "; (Semicolon)"
   },
   "109": {
    "action": 1,
@@ -1288,13 +1288,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 130,
-   "keyCode": 51,
+   "keyType": 1,
+   "keyCode": 54,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Colon"
+   "desc": ", (Comma)"
   },
   "77": {
    "action": 0,
@@ -1433,7 +1433,7 @@
    "desc": ""
   },
   "69": {
-   "action": 0,
+   "action": 1,
    "row": 3,
    "dev": 1,
    "col": 0,
@@ -1441,13 +1441,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 0,
-   "keyCode": 0,
+   "keyType": 1,
+   "keyCode": 44,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": ""
+   "desc": "Space"
   },
   "68": {
    "action": 0,

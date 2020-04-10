@@ -1331,7 +1331,7 @@
    "desc": ""
   },
   "75": {
-   "action": 9,
+   "action": 10,
    "row": 3,
    "dev": 1,
    "col": 1,
@@ -1339,13 +1339,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 5,
+   "keyType": 22,
    "keyCode": 2,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Fn Yellow"
+   "desc": "Fn Yellow Lock"
   },
   "74": {
    "action": 6,
