@@ -36,3 +36,6 @@
 #	ff = false
 [push]
 	default = simple
+
+[include]
+  path = ~/.local.gitconfig
