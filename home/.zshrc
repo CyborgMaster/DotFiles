@@ -162,7 +162,7 @@ if [ `launchctl limit maxfiles | awk '{print $2}'` = 256 ]; then
 fi
 
 # Secrets that shouldn't be committed to source control
-source ~/secrets.sh
+source ~/.secrets.sh
 
 # Environment specific config
 if [ -f ~/.local.zshrc ]; then
