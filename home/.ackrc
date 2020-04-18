@@ -10,6 +10,12 @@
 # ignore case if search is all lowercase
 --smart-case
 
+# ignore non code dirs
+--ignore-dir=fonts
+
+# ignore build dirs
+--ignore-dir=dist
+
 # ignore log files
 --ignore-dir=log
 --ignore-dir=tmp
