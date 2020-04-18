@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/jeremy/.oh-my-zsh
-export ZSH_CUSTOM=/Users/jeremy/.oh-my-zsh-custom
+export ZSH=~/.oh-my-zsh
+export ZSH_CUSTOM=~/.oh-my-zsh-custom
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -51,11 +51,21 @@ ZSH_THEME="cyborg"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git jump emacs colored-man-pages brew osx ssh-agent extract bower mvn
-         node nvm bundler rvm gem rails rake pip rand-quote systemadmin)
+         node nvm pip rand-quote systemadmin)
+if type rvm &> /dev/null; then
+    plugins+=(bundler rvm gem rails rake)
+fi
+
+# SSH key config
+zstyle :omz:plugins:ssh-agent identities id_rsa
+if [ -f ~/.ssh/personal_id_rsa ]; then
+    zstyle -s :omz:plugins:ssh-agent identities saved_identities
+    zstyle :omz:plugins:ssh-agent identities `echo $saved_identities` personal_id_rsa
+fi
 
 # User configuration
 
-export PATH=/Users/jeremy/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin:$PATH
+export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin:$PATH
 export PATH=~/Library/Python/2.7/bin:$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -133,7 +143,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Setup jenv
-if hash jenv; then
+if type jenv &> /dev/null; then
     export PATH="$HOME/.jenv/bin:$PATH"
     eval "$(jenv init -)"
 fi
@@ -144,7 +154,7 @@ fi
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # Secrets that shouldn't be committed to source control
-source '/Users/jeremy/secrets.sh'
+source ~/secrets.sh
 
 # GNU utils path overrides
 PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
