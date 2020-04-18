@@ -137,11 +137,6 @@ alias git-unpushed='git log --branches --not --remotes --simplify-by-decoration 
 # the terminal
 alias emacs="emacsclient --no-wait"
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 # Setup jenv
 if type jenv &> /dev/null; then
     export PATH="$HOME/.jenv/bin:$PATH"
@@ -167,4 +162,11 @@ source ~/.secrets.sh
 # Environment specific config
 if [ -f ~/.local.zshrc ]; then
     source ~/.local.zshrc
+fi
+
+if type rvm &> /dev/null; then
+    # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+    export PATH="$PATH:$HOME/.rvm/bin"
+    # Load RVM into a shell session *as a function*
+    [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 fi
