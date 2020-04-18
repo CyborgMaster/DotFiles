@@ -153,17 +153,18 @@ fi
 # sierra-and-what-can-be-done-about-it/
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
-# Secrets that shouldn't be committed to source control
-source ~/secrets.sh
-
 # GNU utils path overrides
 PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
-
-export AWS_DEFAULT_PROFILE=sts
-
-alias advm_pass="lpass show 'AllyDVM Google' --password -c"
 
 if [ `launchctl limit maxfiles | awk '{print $2}'` = 256 ]; then
     echo "increasing maxfiles..."
     sudo launchctl limit maxfiles 65536 200000
+fi
+
+# Secrets that shouldn't be committed to source control
+source ~/secrets.sh
+
+# Environment specific config
+if [ -f ~/.local.zshrc ]; then
+    source ~/.local.zshrc
 fi
