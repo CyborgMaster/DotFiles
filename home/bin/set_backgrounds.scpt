@@ -2,7 +2,10 @@
 
 # Number of spaces you have
 set spaceCount to 6
-set pictureFile to POSIX file "/Library/Desktop Pictures/2019Tesla/3840x2160_MX.jpg"
+set picture1 to POSIX file "/Library/Desktop Pictures/2019Tesla/3840x2160_MX.jpg"
+set picture2 to POSIX file "/Library/Desktop Pictures/2019Tesla/3840x2160_TE.jpg"
+set picture3 to POSIX file "/Library/Desktop Pictures/2019Tesla/3840x2160_M3.jpg"
+set pictureList to { picture1, picture2, picture3 }
 
 # This was supposed to count the spaces setup in system preferences, but it's not working
 
@@ -19,11 +22,14 @@ tell application "System Events"
   repeat with space from 1 to spaceCount
     key code 18 + space - 1 using control down ## move right
     delay 1
-    tell every desktop
-      set picture rotation to 0
-      set change interval to 0
-      set random order to false
-      set picture to pictureFile
-    end tell
+    repeat with i from 1 to length of pictureList
+      set pictureFile to item i of pictureList
+      tell desktop i
+        set picture rotation to 0
+        set change interval to 0
+        set random order to false
+        set picture to pictureFile
+      end tell
+    end repeat
   end repeat
 end tell
