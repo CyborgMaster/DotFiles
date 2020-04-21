@@ -17,10 +17,11 @@ set pictureList to { picture1, picture2, picture3 }
 #     quit
 # end tell
 
-# Sets the background on every desktop on every space.  (Requires ^# keybaord shortcuts are enabled to switch desktops)
+# Sets the background on every desktop on every space.  (Requires ^# keybaord
+# shortcuts are enabled to switch desktops)
 tell application "System Events"
   repeat with space from 1 to spaceCount
-    key code 18 + space - 1 using control down ## move right
+    key code 18 + space - 1 using control down ## move to desktop
     delay 1
     repeat with i from 1 to length of pictureList
       set pictureFile to item i of pictureList
