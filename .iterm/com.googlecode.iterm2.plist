@@ -74,7 +74,11 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>1520 1266 799 448 0 0 3840 2137 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1922 3 1915 1063 0 0 3840 2137 </string>
+	<string>1920 0 1920 1068 0 0 3840 2137 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>1920 1069 1920 1068 0 0 3840 2137 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>1920 0 1920 1068 0 0 3840 2137 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>1920 1069 1920 1068 0 0 3840 2137 </string>
 	<key>New Bookmarks</key>
@@ -608,7 +612,7 @@
 				</dict>
 			</dict>
 			<key>Minimum Contrast</key>
-			<real>0.38880504261363635</real>
+			<real>0.36916281960227271</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
@@ -696,15 +700,19 @@
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>CA0F143E-7441-43B0-BBAB-4553F160A1AE</string>
+	<key>NoSyncLastTipTime</key>
+	<real>609198189.226758</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>2</integer>
+	<integer>4</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>609060253.39625502</real>
+	<real>609284584.66238201</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
+	<true/>
+	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
@@ -1434,6 +1442,10 @@
 	<integer>0</integer>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>608887453.39611495</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+	</array>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/jmickelson/.iterm</string>
 	<key>SUEnableAutomaticChecks</key>
