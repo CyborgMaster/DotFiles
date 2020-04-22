@@ -7,8 +7,11 @@
  '(enh-ruby-preserve-indent-in-heredocs t)
  '(fill-column 80)
  '(isearchp-deactivate-region-flag nil)
+ '(ivy-wrap t)
  '(js2-bounce-indent-p t)
  '(js2-strict-trailing-comma-warning nil)
+ '(org-startup-indented t)
+ '(org-startup-truncated nil)
  '(package-selected-packages
    (quote
     (go-mode grip-mode graphql-mode string-inflection csv-mode toml-mode prelude-rust rust-mode textile-mode sass-mode markdown-mode narrow-indirect isearch+ groovy-mode less-css-mode unfill zop-to-char zenburn-theme yari yaml-mode which-key volatile-highlights vkill undo-tree smartrep smartparens smart-mode-line ruby-tools revive rainbow-mode rainbow-delimiters ov operate-on-number move-text mmm-mode magit json-mode js2-mode inf-ruby imenu-anywhere helm-projectile helm-descbinds helm-ag guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region exec-path-from-shell enh-ruby-mode elisp-slime-nav easy-kill discover-my-major diminish diff-hl crux company coffee-mode browse-kill-ring beacon anzu ag ace-window)))

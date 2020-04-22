@@ -24,3 +24,19 @@
     (while (< (current-column) 80)
       (insert-char char))))
 (define-key global-map (kbd "s-b f") 'fill-to-end)
+
+;; Make windmove work in Org mode:
+(add-hook 'org-shiftup-final-hook 'windmove-up)
+(add-hook 'org-shiftleft-final-hook 'windmove-left)
+(add-hook 'org-shiftdown-final-hook 'windmove-down)
+(add-hook 'org-shiftright-final-hook 'windmove-right)
+
+;; In org-mode, swap M-RET and RET
+;;
+;; For most note taking, I want return to insert a new item, not create a new
+;; line, for those rare times I actually want a new line character, I can use
+;; M-RET.
+(with-eval-after-load 'org
+  (let ((old-ret (lookup-key org-mode-map (kbd "RET"))))
+    (define-key org-mode-map (kbd "RET") (lookup-key org-mode-map (kbd "M-RET")))
+    (define-key org-mode-map (kbd "M-RET") old-ret)))
