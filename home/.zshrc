@@ -48,7 +48,7 @@ zinit wait lucid for \
       OMZP::nvm \
       OMZP::pip \
       OMZP::rand-quote \
-      OMZP::systemadmin \
+      OMZP::systemadmin
 
 if type rvm &> /dev/null; then
     zinit wait lucid for \
@@ -69,6 +69,14 @@ zinit wait lucid light-mode for \
       atload="_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
       blockf atpull'zinit creinstall -q .'  zsh-users/zsh-completions
 
+# fzf is a fuzzy finder.  This integrates it into all zsh auto-completions
+zinit wait lucid for \
+      OMZP::fzf \
+      pick='zsh/fzf-zsh-completion.sh' lincheney/fzf-tab-completion
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
+export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
+
 # Set OMZ theme. Loaded separately because the theme needs the ! passed to the
 # wait ice to reset the prompt after loading the snippet in Turbo.
 #
@@ -76,6 +84,27 @@ zinit wait lucid light-mode for \
 PS1="READY >" # provide a simple prompt till the theme loads
 zinit ice lucid wait='!' pick='cyborg.zsh-theme'
 zinit load ~/.oh-my-zsh-custom/themes
+
+# fd:  a simple, fast and user-friendly alternative to find.
+zinit wait"1" lucid from"gh-r" as"null" sbin"**/fd" for @sharkdp/fd
+
+# bat: A cat(1) clone with wings.
+zinit wait"1" lucid from"gh-r" as"null" sbin"**/bat" for @sharkdp/bat
+
+# exa: A modern version of ‘ls’. https://the.exa.website/
+# `0z` to make sure it loads after the OMZ less aliases
+zinit wait"0z" lucid from"gh-r" as"null" sbin"exa* -> exa" \
+      atinit="alias ls=exa; alias la='ls -lah'" for ogham/exa
+
+# Colorization of tab complete and exa
+zinit ice wait lucid reset \
+      atclone"local P=${${(M)OSTYPE:#*darwin*}:+g}
+            \${P}sed -i \
+            '/DIR/c\DIR 38;5;63;1' LS_COLORS; \
+            \${P}dircolors -b LS_COLORS > c.zsh" \
+            atpull'%atclone' pick"c.zsh" nocompile'!' \
+            atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”'
+zinit light trapd00r/LS_COLORS
 
 # SSH key config
 zstyle :omz:plugins:ssh-agent identities id_rsa
