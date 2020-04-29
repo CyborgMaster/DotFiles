@@ -137,6 +137,11 @@ alias ag="ag --pager='less -R'"
 # TODO: only do this if rust is installed
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# TODO: only do this if go is installed
+if type go &> /dev/null; then
+    gh() { go help $1 | less }
+fi
+
 optimize-image() {
     convert -filter Triangle -define filter:support=2 -thumbnail $2 \
             -unsharp 0.25x0.25+8+0.065 -dither None -posterize 136 -quality 82 \
