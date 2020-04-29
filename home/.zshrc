@@ -86,11 +86,20 @@ zinit wait lucid from"gh-r" as"null" sbin"**/fd" for @sharkdp/fd
 
 # fzf is a fuzzy finder.  This integrates it into all zsh auto-completions
 zinit wait lucid for \
-      OMZP::fzf \
-      pick='zsh/fzf-zsh-completion.sh' lincheney/fzf-tab-completion
+      OMZP::fzf
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
+
+# I would like to use https://github.com/Aloxaf/fzf-tab, but it is currently
+# crashing for me with the error:
+#
+# _fzf_tab_get_candidates:15: bad set of key/value pairs for associative array
+#
+# So Instead I'm using the following which turns on interactive search for built
+# in zsh completion.  The main thing missing is the ability to search the help
+# text of options.
+zstyle ':completion:*' menu yes select interactive
 
 # Set OMZ theme. Loaded separately because the theme needs the ! passed to the
 # wait ice to reset the prompt after loading the snippet in Turbo.
