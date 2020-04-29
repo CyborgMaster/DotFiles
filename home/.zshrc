@@ -23,21 +23,28 @@ zinit light-mode for \
 # Most themes use this option.
 setopt promptsubst
 
-# Has multiple files so we need to download the whole directory with svn
-#
-# - Idea for Load the full OMZ (Oh My Zsh) lib from
-#   https://github.com/zdharma/zinit/issues/176z.
-# - `osx` plugin loading idea from
-#   http://zdharma.org/zinit/wiki/GALLERY/#snippets.
+# Load base OMZ (Oh My Zsh) lib and tools. Idea for loading the full lib from
+#   https://github.com/zdharma/zinit/issues/176z. Make sure the symlink for
+#   tools exists so OMZ plugins can find it (a similar symlink for the plugins
+#   directory is automatically created).
 zinit wait lucid svn for \
-      multisrc"*.zsh" as"null" is-snippet OMZ::lib \
-      OMZ::plugins/osx
+      as="null" compile="*.zsh" multisrc="*.zsh" OMZ::lib \
+      as="null" atclone='ln -shf OMZ::tools ../tools' OMZ::tools
+
+# Emacs - The plugin has multiple files so we have to download using SVN.
+zinit wait lucid svn for OMZ::plugins/emacs
+# This seems to fix a bug with the oh-my-zsh plugin that causes files to open in
+# the terminal
+alias emacs="emacsclient --no-wait"
+
+# `osx` plugin loading idea from
+# http://zdharma.org/zinit/wiki/GALLERY/#snippets.
+zinit wait lucid svn for OMZ::plugins/osx
 
 # Load OMZ plugins
 zinit wait lucid for \
       OMZP::git \
       OMZP::jump \
-      OMZP::emacs \
       OMZP::colored-man-pages \
       OMZP::brew \
       OMZP::ssh-agent \
@@ -50,6 +57,7 @@ zinit wait lucid for \
       OMZP::rand-quote \
       OMZP::systemadmin
 
+# Ruby plugins and config
 if type rvm &> /dev/null; then
     zinit wait lucid for \
           OMZP::bundler \
@@ -57,17 +65,24 @@ if type rvm &> /dev/null; then
           OMZP::gem \
           OMZP::rails \
           OMZP::rake
+
+    # Fix bug with ruby forking in macOS. See
+    # https://blog.phusion.nl/2017/10/13/why-ruby-app-servers-break-on-macos-
+    # high-sierra-and-what-can-be-done-about-it/
+    export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 fi
 
 # Other Plugins (not OMZ)
-zinit wait lucid for \
-      MichaelAquilina/zsh-you-should-use
+zinit wait lucid for MichaelAquilina/zsh-you-should-use
 
 # Setup completions and highlighting
 zinit wait lucid light-mode for \
       atinit="zicompinit; zicdreplay" zdharma/fast-syntax-highlighting \
       atload="_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
       blockf atpull'zinit creinstall -q .'  zsh-users/zsh-completions
+
+# fd:  a simple, fast and user-friendly alternative to find.
+zinit wait lucid from"gh-r" as"null" sbin"**/fd" for @sharkdp/fd
 
 # fzf is a fuzzy finder.  This integrates it into all zsh auto-completions
 zinit wait lucid for \
@@ -85,11 +100,8 @@ PS1="READY >" # provide a simple prompt till the theme loads
 zinit ice lucid wait='!' pick='cyborg.zsh-theme'
 zinit load ~/.oh-my-zsh-custom/themes
 
-# fd:  a simple, fast and user-friendly alternative to find.
-zinit wait"1" lucid from"gh-r" as"null" sbin"**/fd" for @sharkdp/fd
-
 # bat: A cat(1) clone with wings.
-zinit wait"1" lucid from"gh-r" as"null" sbin"**/bat" for @sharkdp/bat
+zinit wait lucid from"gh-r" as"null" sbin"**/bat" for @sharkdp/bat
 
 # exa: A modern version of ‘ls’. https://the.exa.website/
 # `0z` to make sure it loads after the OMZ less aliases
@@ -122,6 +134,7 @@ export LESS='-i -J -R -W -z-4'
 export LESSOPEN="| pygmentize -f terminal256 %s"
 alias ag="ag --pager='less -R'"
 
+# TODO: only do this if rust is installed
 export PATH="$HOME/.cargo/bin:$PATH"
 
 optimize-image() {
@@ -153,20 +166,11 @@ JQ
 }
 alias git-unpushed='git log --branches --not --remotes --simplify-by-decoration --decorate --oneline'
 
-# This seems to fix a bug with the oh-my-zsh plugin that causes files to open in
-# the terminal
-alias emacs="emacsclient --no-wait"
-
-# Setup jenv
+# jenv - version manager for java
 if type jenv &> /dev/null; then
     export PATH="$HOME/.jenv/bin:$PATH"
     eval "$(jenv init -)"
 fi
-
-# Fix bug with ruby forking in macOS. See
-# https://blog.phusion.nl/2017/10/13/why-ruby-app-servers-break-on-macos-high-
-# sierra-and-what-can-be-done-about-it/
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # GNU utils path overrides
 PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
@@ -184,8 +188,8 @@ if [ -f ~/.local.zshrc ]; then
     source ~/.local.zshrc
 fi
 
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 if type rvm &> /dev/null; then
-    # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
     export PATH="$PATH:$HOME/.rvm/bin"
     # Load RVM into a shell session *as a function*
     [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
