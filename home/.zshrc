@@ -72,6 +72,13 @@ if type rvm &> /dev/null; then
     export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 fi
 
+# Go setup
+if type go &> /dev/null; then
+    gh() { go help $1 | less }
+    zinit wait lucid atinit='export PATH=$PATH:$(go env GOPATH)/bin' for \
+          OMZP::golang
+fi
+
 # Other Plugins (not OMZ)
 zinit wait lucid for MichaelAquilina/zsh-you-should-use
 
@@ -146,9 +153,6 @@ alias ag="ag --pager='less -R'"
 # TODO: only do this if rust is installed
 export PATH="$HOME/.cargo/bin:$PATH"
 
-if type go &> /dev/null; then
-    gh() { go help $1 | less }
-fi
 
 # Unzip wrapper to default to quiet and auto create matching directory
 unzip() { command unzip -q $1 -d $1:r }
