@@ -137,10 +137,12 @@ alias ag="ag --pager='less -R'"
 # TODO: only do this if rust is installed
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# TODO: only do this if go is installed
 if type go &> /dev/null; then
     gh() { go help $1 | less }
 fi
+
+# Unzip wrapper to default to quiet and auto create matching directory
+unzip() { command unzip -q $1 -d $1:r }
 
 optimize-image() {
     convert -filter Triangle -define filter:support=2 -thumbnail $2 \

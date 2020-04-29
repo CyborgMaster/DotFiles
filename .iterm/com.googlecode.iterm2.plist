@@ -74,13 +74,13 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>1520 1266 799 448 0 0 3840 2137 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1280 755 1279 685 -2560 720 2560 1440 </string>
+	<string>1920 0 1920 1068 0 0 3840 2137 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 5 1915 1063 0 0 3840 2137 </string>
+	<string>1920 0 1920 1068 0 0 3840 2137 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>1920 35 1920 1021 0 0 3840 2137 </string>
+	<string>0 0 1920 1068 0 0 3840 2137 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1920 1074 1915 1063 0 0 3840 2137 </string>
+	<string>1920 1069 1920 1068 0 0 3840 2137 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>0 1102 1915 1035 0 0 3840 2137 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
@@ -715,7 +715,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>CA0F143E-7441-43B0-BBAB-4553F160A1AE</string>
 	<key>NoSyncLastTipTime</key>
-	<real>609777492.988783</real>
+	<real>609863935.00658298</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
 	<integer>6</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -1458,11 +1458,12 @@
 	<real>608887453.39611495</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
+		<string>0003</string>
 		<string>0001</string>
 		<string>000</string>
 		<string>0002</string>
 		<string>0000</string>
-		<string>0003</string>
+		<string>0004</string>
 	</array>
 	<key>PointerActions</key>
 	<dict>
@@ -1508,7 +1509,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-28T14:28:26Z</date>
+	<date>2020-04-29T14:28:26Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -1519,6 +1520,8 @@
 	<real>0.35707834663120563</real>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>iTerm Version</key>
 	<string>3.3.9</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
