@@ -51,3 +51,7 @@
   (let ((old-ret (lookup-key org-mode-map (kbd "RET"))))
     (define-key org-mode-map (kbd "RET") (lookup-key org-mode-map (kbd "M-RET")))
     (define-key org-mode-map (kbd "M-RET") old-ret)))
+
+;; Integrate Dash documentation viewer
+(prelude-require-package 'dash-at-point)
+(define-key global-map (kbd "C-h D") 'dash-at-point)
