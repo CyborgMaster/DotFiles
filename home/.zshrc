@@ -91,7 +91,9 @@ zinit wait lucid light-mode for \
 # fd:  a simple, fast and user-friendly alternative to find.
 zinit wait lucid from"gh-r" as"null" sbin"**/fd" for @sharkdp/fd
 
-# fzf is a fuzzy finder.  This integrates it into all zsh auto-completions
+# fzf is a fuzzy finder.  This integrates it into all zsh auto-completions.  The
+# binary is installed via Homebrew (done that way because the OMZ plugin for fzf
+# looks for it there).
 zinit wait lucid for \
       OMZP::fzf
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
