@@ -74,9 +74,9 @@ fi
 
 # Go setup
 if type go &> /dev/null; then
-    gh() { go help $1 | less }
-    zinit wait lucid atinit='export PATH=$PATH:$(go env GOPATH)/bin' for \
-          OMZP::golang
+    goh() { go help $@ | less }
+    export PATH=$PATH:$(go env GOPATH)/bin
+    zinit wait lucid for OMZP::golang
 fi
 
 # Other Plugins (not OMZ)
