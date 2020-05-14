@@ -1,3 +1,6 @@
+;; Don't quit without making double checking
+(setq confirm-kill-emacs 'y-or-n-p)
+
 (add-hook 'groovy-mode-hook
           (lambda ()
             (setq indent-tabs-mode nil
