@@ -55,3 +55,14 @@
 ;; Integrate Dash documentation viewer
 (prelude-require-package 'dash-at-point)
 (define-key global-map (kbd "C-h D") 'dash-at-point)
+
+;; Allow code compilation buffers to re-use the same window across frames and
+;; don't force those frames to take focus
+(add-to-list 'display-buffer-alist
+             '("." nil (reusable-frames . t) (inhibit-switch-frame . t)))
+
+;; This package is awesome and allows moving between frames as easy as windows,
+;; however it doesn't respect MacOS spaces, so I'm not using it for now.
+;; (require 'framemove)
+;; ;; (framemove-default-keybindings)
+;; (setq framemove-hook-into-windmove t)
