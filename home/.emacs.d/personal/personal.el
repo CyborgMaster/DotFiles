@@ -69,3 +69,16 @@
 ;; (require 'framemove)
 ;; ;; (framemove-default-keybindings)
 ;; (setq framemove-hook-into-windmove t)
+
+;; Better modeline (very customizable, gets rid of all the minor modes)
+;; TODO: change the font colors; red when modified is hard to read.
+(use-package doom-modeline
+  :ensure t
+  :init
+  (doom-modeline-mode 1)
+  (setq doom-modeline-icon nil) ; icon's don't work without anti aliasing
+  (setq doom-modeline-height 1)
+  (setq doom-modeline-buffer-file-name-style 'truncate-with-project)
+  (setq doom-modeline-buffer-encoding nil)
+  (setq doom-modeline-env-version nil)
+)
