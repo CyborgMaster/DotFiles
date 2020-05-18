@@ -150,11 +150,13 @@ alias j=jump
 alias agr='alias | grep'
 export LESS='-i -J -R -W -z-4'
 export LESSOPEN="| pygmentize -f terminal256 %s"
+
 alias ag="ag --pager='less -R'"
+export RIPGREP_CONFIG_PATH=~/.ripgreprc
+rg() { command rg -p $@ | less -R }
 
 # TODO: only do this if rust is installed
 export PATH="$HOME/.cargo/bin:$PATH"
-
 
 # Unzip wrapper to default to quiet and auto create matching directory
 unzip() { command unzip -q $1 -d $1:r }
