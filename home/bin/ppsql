@@ -1,0 +1,3 @@
+#!/bin/sh
+
+pbpaste | unescape | cockroach sqlfmt --align --print-width 100
