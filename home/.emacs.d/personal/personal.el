@@ -82,3 +82,5 @@
   (setq doom-modeline-buffer-encoding nil)
   (setq doom-modeline-env-version nil)
 )
+
+(use-package commify :ensure t)

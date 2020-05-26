@@ -1,3 +1,3 @@
 #!/bin/sh
 
-pbpaste | unescape | cockroach sqlfmt --align --print-width 100
+pbpaste | unescape | cockroach sqlfmt --print-width 100 --use-spaces --tab-width=2
