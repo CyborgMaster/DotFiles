@@ -154,6 +154,9 @@ export LESSOPEN="| pygmentize -f terminal256 %s"
 alias ag="ag --pager='less -R'"
 export RIPGREP_CONFIG_PATH=~/.ripgreprc
 rg() { command rg -p $@ | less -R }
+replace() { command rg --color never $1 -l | xargs -n1 perl -pi -e "s|$1|$2|" }
+update_imports() { command rg --color never $1 -l -t go | xargs -n1 goimports -w }
+replace_with_imports() { replace $1 $2 && update_imports $2 }
 
 # TODO: only do this if rust is installed
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -218,5 +221,3 @@ if type rvm &> /dev/null; then
     # Load RVM into a shell session *as a function*
     [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 fi
-
-replace() { rg --color never $1 -l | xargs -n1 perl -pi -e "s|$1|$2|" }
