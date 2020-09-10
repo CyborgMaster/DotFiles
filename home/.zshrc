@@ -146,6 +146,40 @@ fi
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin:$PATH
 export PATH=~/Library/Python/2.7/bin:$PATH
 
+# jenv - version manager for java
+if type jenv &> /dev/null; then
+    export PATH="$HOME/.jenv/bin:$PATH"
+    eval "$(jenv init -)"
+fi
+
+# TODO: only do this if rust is installed
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# GNU utils path overrides
+PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
+
+if [ `launchctl limit maxfiles | awk '{print $2}'` = 256 ]; then
+    echo "increasing maxfiles..."
+    sudo launchctl limit maxfiles 65536 200000
+fi
+
+# Secrets that shouldn't be committed to source control
+source ~/.secrets.sh
+
+# Environment specific config
+if [ -f ~/.local.zshrc ]; then
+    source ~/.local.zshrc
+fi
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+if type rvm &> /dev/null; then
+    export PATH="$PATH:$HOME/.rvm/bin"
+    # Load RVM into a shell session *as a function*
+    [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+fi
+
+### My Commands and Aliases ####################################################
+
 alias j=jump
 alias agr='alias | grep'
 export LESS='-i -J -R -W -z-4'
@@ -157,9 +191,6 @@ rg() { command rg -p $@ | less -R }
 replace() { command rg --color never $1 -l | xargs -n1 perl -pi -e "s|$1|$2|g" }
 update_imports() { command rg --color never $1 -l -t go | xargs -n1 goimports -w }
 replace_with_imports() { replace $1 $2 && update_imports $2 }
-
-# TODO: only do this if rust is installed
-export PATH="$HOME/.cargo/bin:$PATH"
 
 # Unzip wrapper to default to quiet and auto create matching directory
 unzip() { command unzip -q $1 -d $1:r }
@@ -193,31 +224,4 @@ JQ
 }
 alias git-unpushed='git log --branches --not --remotes --simplify-by-decoration --decorate --oneline'
 
-# jenv - version manager for java
-if type jenv &> /dev/null; then
-    export PATH="$HOME/.jenv/bin:$PATH"
-    eval "$(jenv init -)"
-fi
-
-# GNU utils path overrides
-PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
-
-if [ `launchctl limit maxfiles | awk '{print $2}'` = 256 ]; then
-    echo "increasing maxfiles..."
-    sudo launchctl limit maxfiles 65536 200000
-fi
-
-# Secrets that shouldn't be committed to source control
-source ~/.secrets.sh
-
-# Environment specific config
-if [ -f ~/.local.zshrc ]; then
-    source ~/.local.zshrc
-fi
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-if type rvm &> /dev/null; then
-    export PATH="$PATH:$HOME/.rvm/bin"
-    # Load RVM into a shell session *as a function*
-    [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-fi
+alias new-todos="ack '"'^\+(?!\+).*TODO'"'"

@@ -6,6 +6,7 @@
  '(enh-ruby-bounce-deep-indent nil t)
  '(enh-ruby-preserve-indent-in-heredocs t)
  '(fill-column 80)
+ '(groovy-indent-offset 2)
  '(isearchp-deactivate-region-flag nil)
  '(ivy-wrap t)
  '(js2-bounce-indent-p t)
