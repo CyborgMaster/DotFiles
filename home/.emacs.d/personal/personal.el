@@ -84,3 +84,6 @@
 )
 
 (use-package commify :ensure t)
+
+;; This defaults to imenu anywhere.  I prefer it for the current file only.
+(define-key prelude-mode-map (kbd "C-c i") 'helm-imenu)
