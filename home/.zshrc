@@ -55,7 +55,8 @@ zinit wait lucid for \
       OMZP::nvm \
       OMZP::pip \
       OMZP::rand-quote \
-      OMZP::systemadmin
+      OMZP::systemadmin \
+      OMZP::kubectl
 
 # Ruby plugins and config
 if type rvm &> /dev/null; then
