@@ -1,7 +1,9 @@
 #!/usr/bin/osascript
 
+set digitKeyCodes to {29, 18, 19, 20, 21, 23, 22, 26, 28, 25}
+
 # Number of spaces you have
-set spaceCount to 6
+set spaceCount to 7
 set picture1 to POSIX file "/Library/Desktop Pictures/2019Tesla/3840x2160_MX.jpg"
 set picture2 to POSIX file "/Library/Desktop Pictures/2019Tesla/3840x2160_TE.jpg"
 set picture3 to POSIX file "/Library/Desktop Pictures/2019Tesla/3840x2160_M3.jpg"
@@ -21,7 +23,7 @@ set pictureList to { picture1, picture2, picture3 }
 # shortcuts are enabled to switch desktops)
 tell application "System Events"
   repeat with space from 1 to spaceCount
-    key code 18 + space - 1 using control down ## move to desktop
+    key code item (space + 1) of digitKeyCodes using control down ## move to desktop
     delay 1
     repeat with i from 1 to length of pictureList
       set pictureFile to item i of pictureList
