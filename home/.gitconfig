@@ -41,3 +41,5 @@
   path = ~/.local.gitconfig
 [pull]
 	rebase = false
+[diff]
+	tool = bc3

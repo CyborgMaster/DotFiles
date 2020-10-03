@@ -87,3 +87,15 @@
 
 ;; This defaults to imenu anywhere.  I prefer it for the current file only.
 (define-key prelude-mode-map (kbd "C-c i") 'helm-imenu)
+
+;; Always have ediff open things in the same frame.
+(advice-add 'ediff-window-display-p :override #'ignore)
+
+;; Make ediff return to the previous session when quitting a nested one.
+(defun restore-last-ediff-session ()
+  (when (> (length ediff-session-registry) 0)
+    (ediff-with-current-buffer
+      (nth 0 ediff-session-registry)
+      (ediff-show-meta-buffer (nth 0 ediff-session-registry) t)
+      (ediff-update-diffs))))
+(add-hook 'ediff-after-quit-hook-internal #'restore-last-ediff-session)
