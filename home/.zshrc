@@ -168,12 +168,12 @@ fi
 source ~/.secrets.sh
 
 # Environment specific config
-if [ -f ~/.local.zshrc ]; then
+if [[ -f ~/.local.zshrc ]]; then
     source ~/.local.zshrc
 fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-if type rvm &> /dev/null; then
+if [[ -f ~/.rvm/bin/rvm ]]; then
     export PATH="$PATH:$HOME/.rvm/bin"
     # Load RVM into a shell session *as a function*
     [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
