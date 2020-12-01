@@ -1,6 +1,7 @@
-personal_ws-1.1 en 19 
+personal_ws-1.1 en 21 
 Denormalization
 Deserialize
+analytics
 balancer
 customizable
 denormalized
@@ -16,5 +17,6 @@ observables
 observered
 performant
 scalable
+schemas
 uncomment
 verifications
