@@ -99,3 +99,14 @@
       (ediff-show-meta-buffer (nth 0 ediff-session-registry) t)
       (ediff-update-diffs))))
 (add-hook 'ediff-after-quit-hook-internal #'restore-last-ediff-session)
+
+;; When quitting last ediff session, restore the window layout.
+(defvar ediff-last-windows nil)
+(defun store-pre-ediff-winconfig ()
+  (when (= (length ediff-session-registry) 0)
+    (setq ediff-last-windows (current-window-configuration))))
+(defun restore-pre-ediff-winconfig ()
+  (when (= (length ediff-session-registry) 0)
+    (set-window-configuration ediff-last-windows)))
+(add-hook 'ediff-before-setup-hook #'store-pre-ediff-winconfig)
+(add-hook 'ediff-after-quit-hook-internal #'restore-pre-ediff-winconfig)
