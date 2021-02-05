@@ -9,7 +9,7 @@
 (add-hook 'c-mode-hook (lambda () (c-toggle-comment-style -1)))
 
 (prelude-require-package 'unfill)
-(define-key global-map (kbd "C-M-q") 'unfill-paragraph)
+(define-key global-map (kbd "C-s-q") 'unfill-paragraph)
 
 (global-unset-key (kbd "ESC ESC ESC"))
 
@@ -110,3 +110,5 @@
     (set-window-configuration ediff-last-windows)))
 (add-hook 'ediff-before-setup-hook #'store-pre-ediff-winconfig)
 (add-hook 'ediff-after-quit-hook-internal #'restore-pre-ediff-winconfig)
+
+(prelude-require-package 'multi-line)
