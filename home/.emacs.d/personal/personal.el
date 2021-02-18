@@ -112,3 +112,4 @@
 (add-hook 'ediff-after-quit-hook-internal #'restore-pre-ediff-winconfig)
 
 (prelude-require-package 'multi-line)
+(define-key global-map (kbd "s-RET") 'multi-line)

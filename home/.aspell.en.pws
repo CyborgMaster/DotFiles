@@ -1,4 +1,4 @@
-personal_ws-1.1 en 24 
+personal_ws-1.1 en 25 
 Denormalization
 Deserialize
 analytics
@@ -10,6 +10,7 @@ deserializing
 dissociations
 executables
 indexable
+instantiation
 invariants
 natively
 nonconformance
