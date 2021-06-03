@@ -1,6 +1,7 @@
-personal_ws-1.1 en 25 
+personal_ws-1.1 en 28 
 Denormalization
 Deserialize
+PLC
 analytics
 balancer
 containments
@@ -10,6 +11,7 @@ deserializing
 dissociations
 executables
 indexable
+inspectable
 instantiation
 invariants
 natively
@@ -23,4 +25,5 @@ performant
 scalable
 schemas
 uncomment
+unhandled
 verifications
