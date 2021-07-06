@@ -28,6 +28,30 @@
       (insert-char char))))
 (define-key global-map (kbd "s-b f") 'fill-to-end)
 
+(defun quote-lines (start end)
+  (interactive "r")
+  (unless (use-region-p) (setq start (point)) (setq end (+ (point) 1)))
+  (save-excursion
+    (goto-char start)
+    (while (< (point) end)
+      (move-to-mode-line-start)
+      (insert-char ?\")
+      (end-of-line)
+      (insert-char ?\")
+      (forward-line 1))))
+
+(defun unquote-lines (start end)
+  (interactive "r")
+  (unless (use-region-p) (setq start (point)) (setq end (+ (point) 1)))
+  (save-excursion
+    (goto-char start)
+    (while (< (point) end)
+      (move-to-mode-line-start)
+      (when (= (char-after) ?\")(delete-char 1))
+      (end-of-line)
+      (when (= (char-before) ?\")(delete-char -1))
+      (forward-line 1))))
+
 ;; Org mode customizations
 (add-to-list 'auto-mode-alist '("\\.org\\.txt\\'" . org-mode))
 (with-eval-after-load 'org

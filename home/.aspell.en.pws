@@ -1,4 +1,4 @@
-personal_ws-1.1 en 28 
+personal_ws-1.1 en 30 
 Denormalization
 Deserialize
 PLC
@@ -22,8 +22,10 @@ observables
 observered
 parallelization
 performant
+salability
 scalable
 schemas
 uncomment
 unhandled
+unsubmitted
 verifications
