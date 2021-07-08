@@ -30,8 +30,9 @@
 
 (defun quote-lines (start end)
   (interactive "r")
-  (unless (use-region-p) (setq start (point)) (setq end (+ (point) 1)))
-  (save-mark-and-excursion
+  (when (and (called-interactively-p 'any) (not (use-region-p)))
+    (setq start (point)) (setq end (+ (point) 1)))
+  (save-excursion
     (goto-char start)
     (while (< (point) end)
       (move-to-mode-line-start)
@@ -39,23 +40,41 @@
       (end-of-line)
       (unless (= (char-before) ?\s)(insert-char ?\s))
       (insert-char ?\")
-      (forward-line 1)))
-  (setq deactivate-mark  nil))
+      (forward-line 1))))
 
 (defun unquote-lines (start end)
   (interactive "r")
-  (unless (use-region-p) (setq start (point)) (setq end (+ (point) 1)))
-  (save-mark-and-excursion
+  (when (and (called-interactively-p 'any) (not (use-region-p)))
+    (setq start (point)) (setq end (+ (point) 1)))
+  (save-excursion
     (goto-char start)
     (while (< (point) end)
       (move-to-mode-line-start)
       (when (= (char-after) ?\")(delete-char 1))
       (end-of-line)
       (when (= (char-before) ?\")(delete-char -1))
-      (forward-line 1)))
-  (setq deactivate-mark  nil))
+      (forward-line 1))))
 
-;; Org mode customizations
+(defun proto-fill-string (start end)
+  (interactive "r")
+  (let (end-mark saved-fill-column) (save-excursion
+    (goto-char start)
+    (setq start (line-beginning-position))
+    (goto-char end)
+    (setq end-mark (make-marker))
+    (set-marker end-mark (line-end-position))
+
+    (unquote-lines start (marker-position end-mark))
+
+    ;; Subtract 3 for the 2 quotes and a space used by quote-lines
+    (setq saved-fill-column fill-column)
+    (setq fill-column (- fill-column 3))
+    (fill-region start (marker-position end-mark))
+    (setq fill-column saved-fill-column)
+
+    (quote-lines start (marker-position end-mark)))))
+
+;; Org Mode customizations
 (add-to-list 'auto-mode-alist '("\\.org\\.txt\\'" . org-mode))
 (with-eval-after-load 'org
   ;; Make windmove work in Org mode:
