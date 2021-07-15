@@ -74,6 +74,24 @@
 
     (quote-lines start (marker-position end-mark)))))
 
+(require 'cl)
+(defun proto-renumber (start end first-field-num)
+  (interactive "r\np")
+  (when (and (called-interactively-p 'any) (not (use-region-p)))
+    (error "Must have active region!"))
+
+  (let (end-mark (num first-field-num)) (save-excursion
+    (setq end-mark (make-marker))
+    (set-marker end-mark end)
+    (goto-char start)
+
+    (cl-loop
+      (search-forward-regexp "[a-z] = ")
+      (when (> (point) (marker-position end-mark)) (cl-return))
+      (kill-word 1)
+      (insert (number-to-string num))
+      (setq num (+ num 1))))))
+
 ;; Org Mode customizations
 (add-to-list 'auto-mode-alist '("\\.org\\.txt\\'" . org-mode))
 (with-eval-after-load 'org
