@@ -4,10 +4,14 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ediff-split-window-function (quote split-window-horizontally))
+ '(elmacro-unwanted-commands-regexps
+   (quote
+    ("^(ido.*)$" "^(smex)$" "file-notify-handle-event" "make-directory" "delete-file")))
  '(enh-ruby-bounce-deep-indent nil t)
  '(enh-ruby-preserve-indent-in-heredocs t)
  '(fill-column 80)
  '(groovy-indent-offset 2)
+ '(imenu-max-item-length 120)
  '(isearchp-deactivate-region-flag nil)
  '(ivy-wrap t)
  '(js2-bounce-indent-p t)
