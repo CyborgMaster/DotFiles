@@ -4,6 +4,8 @@
 <dict>
 	<key>AddNewTabAtEndOfTabs</key>
 	<false/>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>Default Bookmark Guid</key>
 	<string>48567268-872C-4487-90F4-6D0339F341BF</string>
 	<key>DisableWindowSizeSnap</key>

@@ -1,4 +1,4 @@
-personal_ws-1.1 en 32 
+personal_ws-1.1 en 35 
 Denormalization
 Deserialize
 PLC
@@ -15,7 +15,9 @@ executables
 indexable
 inspectable
 instantiation
+integrations
 invariants
+lifecycle
 natively
 nonconformance
 nonconformances
@@ -27,6 +29,7 @@ performant
 salability
 scalable
 schemas
+severities
 uncomment
 unhandled
 unsubmitted
