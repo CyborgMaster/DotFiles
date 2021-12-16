@@ -17,6 +17,23 @@
  '(js2-strict-trailing-comma-warning nil)
  '(org-agenda-restore-windows-after-quit t)
  '(org-agenda-window-setup 'current-window)
+ '(org-latex-default-packages-alist
+   '(("AUTO" "inputenc" t
+      ("pdflatex"))
+     ("T1" "fontenc" t
+      ("pdflatex"))
+     ("" "graphicx" t nil)
+     ("" "grffile" t nil)
+     ("" "longtable" nil nil)
+     ("" "wrapfig" nil nil)
+     ("" "rotating" nil nil)
+     ("normalem" "ulem" t nil)
+     ("" "amsmath" t nil)
+     ("" "textcomp" t nil)
+     ("" "amssymb" t nil)
+     ("" "capt-of" nil nil)
+     ("" "hyperref" nil nil)
+     ("margin=1in" "geometry" nil nil)))
  '(org-latex-hyperref-template
    "\\hypersetup{
  pdfauthor={%a},
