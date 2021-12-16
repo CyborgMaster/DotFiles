@@ -6,7 +6,8 @@ set digitKeyCodes to {29, 18, 19, 20, 21, 23, 22, 26, 28, 25}
 set spaceCount to 7
 set picture1 to POSIX file "/Library/Desktop Pictures/2021Tesla/E01.jpg"
 set picture2 to POSIX file "/Library/Desktop Pictures/2021Tesla/X201.jpg"
-set pictureList to { picture1, picture2 }
+set picture3 to POSIX file "/Library/Desktop Pictures/2021Tesla/3201.jpg"
+set pictureList to { picture1, picture2, picture3}
 
 # This was supposed to count the spaces setup in system preferences, but it's not working
 

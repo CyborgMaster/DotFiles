@@ -136,16 +136,16 @@
 
 ;; Better modeline (very customizable, gets rid of all the minor modes)
 ;; TODO: change the font colors; red when modified is hard to read.
-(use-package doom-modeline
-  :ensure t
-  :init
-  (doom-modeline-mode 1)
-  (setq doom-modeline-icon nil) ; icon's don't work without anti aliasing
-  (setq doom-modeline-height 1)
-  (setq doom-modeline-buffer-file-name-style 'truncate-with-project)
-  (setq doom-modeline-buffer-encoding nil)
-  (setq doom-modeline-env-version nil)
-)
+;; (use-package doom-modeline
+;;   :ensure t
+;;   :init
+;;   (doom-modeline-mode 1)
+;;   (setq doom-modeline-icon nil) ; icon's don't work without anti aliasing
+;;   (setq doom-modeline-height 1)
+;;   (setq doom-modeline-buffer-file-name-style 'truncate-with-project)
+;;   (setq doom-modeline-buffer-encoding nil)
+;;   (setq doom-modeline-env-version nil)
+;; )
 
 (use-package commify :ensure t)
 
@@ -186,3 +186,8 @@
 ;; triggered.
 (setq which-key-idle-delay 10000)
 (setq which-key-idle-secondary-delay 0.05)
+
+;; Increase the amount of data which Emacs reads from the process for LSP
+;; mode. Again the emacs default is too low 4k considering that the some of the
+;; language server responses are in 800k - 3M range.
+(setq read-process-output-max (* 3 1024 1024)) ;; 3mb
