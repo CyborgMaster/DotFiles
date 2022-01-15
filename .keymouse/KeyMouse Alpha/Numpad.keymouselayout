@@ -6,7 +6,7 @@
  "keys": {
   "143": {
    "keyExtra": 0,
-   "action": 8,
+   "action": 1,
    "row": 5,
    "dev": 1,
    "col": 12,
@@ -14,17 +14,17 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 3,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Right"
+   "desc": "Normal Mouse"
   },
   "142": {
    "keyExtra": 0,
-   "action": 8,
+   "action": 1,
    "row": 4,
    "dev": 1,
    "col": 12,
@@ -32,17 +32,17 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 2,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Left"
+   "desc": "Normal Mouse"
   },
   "141": {
    "keyExtra": 0,
-   "action": 8,
+   "action": 1,
    "row": 3,
    "dev": 1,
    "col": 12,
@@ -50,17 +50,17 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
-   "keyCode": 1,
+   "keyType": 28,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Down"
+   "desc": "Normal Mouse"
   },
   "140": {
    "keyExtra": 0,
-   "action": 8,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 12,
@@ -68,13 +68,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 17,
+   "keyType": 28,
    "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Scroll Up"
+   "desc": "Normal Mouse"
   },
   "139": {
    "keyExtra": 0,
