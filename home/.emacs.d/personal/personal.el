@@ -191,3 +191,7 @@
 ;; mode. Again the emacs default is too low 4k considering that the some of the
 ;; language server responses are in 800k - 3M range.
 (setq read-process-output-max (* 3 1024 1024)) ;; 3mb
+
+;; Increase the characters available to avy to reduce the number of keystrokes
+;; to jump to a key
+(setq avy-keys (number-sequence ?a ?z))
