@@ -1,8 +1,14 @@
-personal_ws-1.1 en 41 
+personal_ws-1.1 en 51 
+APIs
 Denormalization
 Deserialize
+GRPC
+JSON
 Mickelson
+NTP
 PLC
+Prepend
+Rotatable
 Unscrapped
 analytics
 backdoors
@@ -13,6 +19,7 @@ cryptographic
 customizable
 denormalized
 dereference
+deserialize
 deserializing
 dissociations
 executables
@@ -23,6 +30,7 @@ instantiation
 integrations
 invariants
 lifecycle
+mutator
 natively
 nonconformance
 nonconformances
@@ -31,9 +39,11 @@ observables
 observered
 parallelization
 performant
+retryable
 salability
 scalable
 schemas
+serializer
 severities
 transactional
 uncomment

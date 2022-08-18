@@ -35,7 +35,7 @@
   (save-excursion
     (goto-char start)
     (while (< (point) end)
-      (move-to-mode-line-start)
+      (crux-move-to-mode-line-start)
       (insert-char ?\")
       (end-of-line)
       (unless (= (char-before) ?\s)(insert-char ?\s))
@@ -49,7 +49,7 @@
   (save-excursion
     (goto-char start)
     (while (< (point) end)
-      (move-to-mode-line-start)
+      (crux-move-to-mode-line-start)
       (when (= (char-after) ?\")(delete-char 1))
       (end-of-line)
       (when (= (char-before) ?\")(delete-char -1))
