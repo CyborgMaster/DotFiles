@@ -225,7 +225,7 @@ JQ
 }
 
 alias git-unpushed='git log --branches --not --remotes --simplify-by-decoration --decorate --oneline'
-alias new-todos="ack '"'^\+(?!\+).*TODO'"'"
+alias new-todos="ack '"'^\+(?!\+).*TODO(?!:K)'"'"
 
 # https://superuser.com/a/767491
 # https://stackoverflow.com/a/37222377
@@ -242,3 +242,4 @@ alias new-todos="ack '"'^\+(?!\+).*TODO'"'"
 #        'max memory:                %M '$MAX_MEMORY_UNITS''$'\n'\
 #        'page faults from disk:     %F'$'\n'\
 #        'other page faults:         %R'
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
