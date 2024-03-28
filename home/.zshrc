@@ -1,22 +1,14 @@
 ### Added by Zinit's installer
-if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
-    print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
-    command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
-    command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
-        print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
-            print -P "%F{160}▓▒░ The clone has failed.%f%b"
-fi
-
-source "$HOME/.zinit/bin/zinit.zsh"
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
+[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+source "${ZINIT_HOME}/zinit.zsh"
 
 # Load a few important annexes, without Turbo
 # (this is currently required for annexes)
 zinit light-mode for \
-      zinit-zsh/z-a-patch-dl \
-      zinit-zsh/z-a-as-monitor \
-      zinit-zsh/z-a-bin-gem-node
+      zdharma-continuum/zinit-annex-patch-dl \
+      zdharma-continuum/zinit-annex-bin-gem-node
 
 ### End of Zinit's installer chunk
 
@@ -27,19 +19,52 @@ setopt promptsubst
 #   https://github.com/zdharma/zinit/issues/176z. Make sure the symlink for
 #   tools exists so OMZ plugins can find it (a similar symlink for the plugins
 #   directory is automatically created).
-zinit wait lucid svn for \
-      as="null" compile="*.zsh" multisrc="*.zsh" OMZ::lib \
-      as="null" atclone='ln -shf OMZ::tools ../tools' OMZ::tools
+#
+# zinit wait lucid svn for \
+#       as="null" compile="*.zsh" multisrc="*.zsh" OMZ::lib \
+#       as="null" atclone='ln -shf OMZ::tools ../tools' OMZ::tools
+#
+# Since GitHub pulled SVN support the above no longer works and so we are
+# loading the files individually for now.  Issue tracked here:
+# https://github.com/zdharma-continuum/zinit/issues/504
+zinit wait lucid for \
+   OMZ::lib/async_prompt.zsh \
+   OMZ::lib/bzr.zsh \
+   OMZ::lib/cli.zsh \
+   OMZ::lib/clipboard.zsh \
+   OMZ::lib/compfix.zsh \
+   OMZ::lib/completion.zsh \
+   OMZ::lib/correction.zsh \
+   OMZ::lib/diagnostics.zsh \
+   OMZ::lib/directories.zsh \
+   OMZ::lib/functions.zsh \
+   OMZ::lib/git.zsh \
+   OMZ::lib/grep.zsh \
+   OMZ::lib/history.zsh \
+   OMZ::lib/key-bindings.zsh \
+   OMZ::lib/misc.zsh \
+   OMZ::lib/nvm.zsh \
+   OMZ::lib/prompt_info_functions.zsh \
+   OMZ::lib/spectrum.zsh \
+   OMZ::lib/termsupport.zsh \
+   OMZ::lib/theme-and-appearance.zsh \
+   OMZ::lib/vcs_info.zsh
 
 # Emacs - The plugin has multiple files so we have to download using SVN.
-zinit wait lucid svn for OMZ::plugins/emacs
+#
+# This used to be loaded over SVN as well, see above issue, but SVN isn't
+# working so we aren't getting the extra files.
+zinit wait lucid for OMZP::emacs
+
 # This seems to fix a bug with the oh-my-zsh plugin that causes files to open in
 # the terminal
 alias emacs="emacsclient --no-wait"
 
 # `osx` plugin loading idea from
 # http://zdharma.org/zinit/wiki/GALLERY/#snippets.
-zinit wait lucid svn for OMZ::plugins/osx
+#
+# macos doesn't work without svn to load multiple files, see above issues.
+# zinit wait lucid svn for OMZ::plugins/macos
 
 # Load OMZ plugins
 zinit wait lucid for \
@@ -85,7 +110,7 @@ zinit wait lucid for MichaelAquilina/zsh-you-should-use
 
 # Setup completions and highlighting
 zinit wait lucid light-mode for \
-      atinit="zicompinit; zicdreplay" zdharma/fast-syntax-highlighting \
+      atinit="zicompinit; zicdreplay" zdharma-continuum/fast-syntax-highlighting \
       atload="_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
       blockf atpull'zinit creinstall -q .'  zsh-users/zsh-completions
 
@@ -123,9 +148,9 @@ zinit load ~/.oh-my-zsh-custom/themes
 zinit wait lucid from"gh-r" as"null" sbin"**/bat" for @sharkdp/bat
 
 # exa: A modern version of ‘ls’. https://the.exa.website/
+# Replaced by eza because exa was abandoned.
 # `0z` to make sure it loads after the OMZ less aliases
-zinit wait"0z" lucid from"gh-r" as"null" sbin"exa* -> exa" \
-      atinit="alias ls=exa; alias la='ls -lah'" for ogham/exa
+zinit wait'0z' lucid atinit="alias ls=eza; alias la='ls -lah'" nocd for /dev/null
 
 # Colorization of tab complete and exa
 zinit ice wait lucid reset \
