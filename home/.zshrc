@@ -163,10 +163,10 @@ zinit ice wait lucid reset \
 zinit light trapd00r/LS_COLORS
 
 # SSH key config
-zstyle :omz:plugins:ssh-agent identities id_rsa
-if [ -f ~/.ssh/personal_id_rsa ]; then
+zstyle :omz:plugins:ssh-agent identities id
+if [ -f ~/.ssh/personal_id ]; then
     zstyle -s :omz:plugins:ssh-agent identities saved_identities
-    zstyle :omz:plugins:ssh-agent identities `echo $saved_identities` personal_id_rsa
+    zstyle :omz:plugins:ssh-agent identities `echo $saved_identities` personal_id
 fi
 
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin:$PATH
