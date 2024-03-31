@@ -61,7 +61,6 @@ zinit wait lucid for \
       OMZP::git \
       OMZP::jump \
       OMZP::colored-man-pages \
-      OMZP::brew \
       OMZP::ssh-agent \
       OMZP::extract \
       OMZP::bower \
@@ -72,6 +71,10 @@ zinit wait lucid for \
       OMZP::rand-quote \
       OMZP::systemadmin \
       OMZP::kubectl
+
+# Load immediately to set PATH
+zinit lucid for \
+      OMZP::brew
 
 # Emacs - The plugin has multiple files so we have to download using SVN.
 #
@@ -210,7 +213,8 @@ fi
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 # Make sure my personal bin is first on the path
-zinit wait'0c' lucid atinit='export PATH=~/bin:$PATH' nocd light-mode for zdharma-continuum/null
+# zinit wait'0c' lucid atinit='export PATH=~/bin:$PATH' nocd light-mode for zdharma-continuum/null
+export PATH="$HOME/bin:$PATH"
 
 ### My Commands and Aliases ####################################################
 
@@ -275,4 +279,3 @@ alias new-todos="ack '"'^\+(?!\+).*TODO(?!:K)'"'"
 #        'max memory:                %M '$MAX_MEMORY_UNITS''$'\n'\
 #        'page faults from disk:     %F'$'\n'\
 #        'other page faults:         %R'
-
