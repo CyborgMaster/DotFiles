@@ -43,3 +43,5 @@
 	rebase = false
 [diff]
 	tool = bc3
+[init]
+	defaultBranch = main

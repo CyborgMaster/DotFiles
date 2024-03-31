@@ -1,5 +1,6 @@
 # This is based off robbyrussell.zsh-theme.  We've customized the git info to
-# include the WIP notification from the git plugin.
+# include the WIP notification from the git plugin. And to add the time on the
+# right
 
 # Based on `git_prompt_info` from oh-my-zsh/lib/git.zsh
 function git_custom_info() {
@@ -20,6 +21,7 @@ function wip() {
 
 PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
 PROMPT+='%{$fg[cyan]%}%c%{$reset_color%} $(git_custom_info)'
+RPROMPT="%F{008}%D %T%{$reset_color%}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "

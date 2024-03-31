@@ -35,7 +35,7 @@
   (save-excursion
     (goto-char start)
     (while (< (point) end)
-      (move-to-mode-line-start)
+      (crux-move-to-mode-line-start)
       (insert-char ?\")
       (end-of-line)
       (unless (= (char-before) ?\s)(insert-char ?\s))
@@ -49,7 +49,7 @@
   (save-excursion
     (goto-char start)
     (while (< (point) end)
-      (move-to-mode-line-start)
+      (crux-move-to-mode-line-start)
       (when (= (char-after) ?\")(delete-char 1))
       (end-of-line)
       (when (= (char-before) ?\")(delete-char -1))
@@ -191,3 +191,7 @@
 ;; mode. Again the emacs default is too low 4k considering that the some of the
 ;; language server responses are in 800k - 3M range.
 (setq read-process-output-max (* 3 1024 1024)) ;; 3mb
+
+;; Increase the characters available to avy to reduce the number of keystrokes
+;; to jump to a key
+(setq avy-keys (number-sequence ?a ?z))
