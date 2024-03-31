@@ -182,7 +182,7 @@ if type jenv &> /dev/null; then
 fi
 
 # TODO: only do this if rust is installed
-export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:$HOME/.cargo/bin"
 
 # GNU utils path overrides
 PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"

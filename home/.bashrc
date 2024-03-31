@@ -179,3 +179,4 @@ export HOMEBREW_GITHUB_API_TOKEN='9fe8c1dc328eac75159e58dfe1b8be53c71d989b'
 eval "$(jenv init -)"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+. "$HOME/.cargo/env"
