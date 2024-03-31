@@ -50,16 +50,6 @@ zinit wait lucid for \
    OMZ::lib/theme-and-appearance.zsh \
    OMZ::lib/vcs_info.zsh
 
-# Emacs - The plugin has multiple files so we have to download using SVN.
-#
-# This used to be loaded over SVN as well, see above issue, but SVN isn't
-# working so we aren't getting the extra files.
-zinit wait lucid for OMZP::emacs
-
-# This seems to fix a bug with the oh-my-zsh plugin that causes files to open in
-# the terminal
-alias emacs="emacsclient --no-wait"
-
 # `osx` plugin loading idea from
 # http://zdharma.org/zinit/wiki/GALLERY/#snippets.
 #
@@ -82,6 +72,20 @@ zinit wait lucid for \
       OMZP::rand-quote \
       OMZP::systemadmin \
       OMZP::kubectl
+
+# Emacs - The plugin has multiple files so we have to download using SVN.
+#
+# Has to be loaded after OMZP::brew
+#
+# This used to be loaded over SVN as well, see above issue, but SVN isn't
+# working so we aren't getting the extra file, so we manually download it.
+# zinit wait lucid for OMZP::emacs
+zinit ice lucid wait atclone'curl -Os https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/emacs/emacsclient.sh && chmod 755 emacsclient.sh'
+zinit snippet https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/emacs/emacs.plugin.zsh
+
+# This seems to fix a bug with the oh-my-zsh plugin that causes files to open in
+# the terminal
+# alias emacs="emacsclient --no-wait"
 
 # Ruby plugins and config
 if type rvm &> /dev/null; then
@@ -147,10 +151,9 @@ zinit load ~/.oh-my-zsh-custom/themes
 # bat: A cat(1) clone with wings.
 zinit wait lucid from"gh-r" as"null" sbin"**/bat" for @sharkdp/bat
 
-# exa: A modern version of ‘ls’. https://the.exa.website/
-# Replaced by eza because exa was abandoned.
-# `0z` to make sure it loads after the OMZ less aliases
-zinit wait'0z' lucid atinit="alias ls=eza; alias la='ls -lah'" nocd for /dev/null
+# eza: A modern version of ‘ls’. https://eza.rocks/
+# Must be installed by brew
+zinit wait lucid atinit="alias ls=eza; alias la='ls -lah'" nocd light-mode for zdharma-continuum/null
 
 # Colorization of tab complete and exa
 zinit ice wait lucid reset \
@@ -169,7 +172,7 @@ if [ -f ~/.ssh/personal_id ]; then
     zstyle :omz:plugins:ssh-agent identities `echo $saved_identities` personal_id
 fi
 
-export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin:$PATH
 export PATH=~/Library/Python/2.7/bin:$PATH
 
 # jenv - version manager for java
@@ -203,6 +206,11 @@ if [[ -f ~/.rvm/bin/rvm ]]; then
     # Load RVM into a shell session *as a function*
     [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 fi
+
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+# Make sure my personal bin is first on the path
+zinit wait'0c' lucid atinit='export PATH=~/bin:$PATH' nocd light-mode for zdharma-continuum/null
 
 ### My Commands and Aliases ####################################################
 
@@ -267,4 +275,4 @@ alias new-todos="ack '"'^\+(?!\+).*TODO(?!:K)'"'"
 #        'max memory:                %M '$MAX_MEMORY_UNITS''$'\n'\
 #        'page faults from disk:     %F'$'\n'\
 #        'other page faults:         %R'
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
