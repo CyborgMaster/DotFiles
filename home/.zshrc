@@ -70,7 +70,8 @@ zinit wait lucid for \
       OMZP::pip \
       OMZP::rand-quote \
       OMZP::systemadmin \
-      OMZP::kubectl
+      OMZP::kubectl \
+      OMZP::virtualenvwrapper
 
 # Load immediately to set PATH
 zinit lucid for \
@@ -176,7 +177,8 @@ if [ -f ~/.ssh/personal_id ]; then
 fi
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin:$PATH
-export PATH=~/Library/Python/2.7/bin:$PATH
+export PATH=$PATH:~/Library/Python/2.7/bin
+export PATH=$PATH:~/Library/Python/3.9/bin
 
 # jenv - version manager for java
 if type jenv &> /dev/null; then
