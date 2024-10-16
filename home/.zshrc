@@ -190,7 +190,7 @@ fi
 export PATH="$PATH:$HOME/.cargo/bin"
 
 # GNU utils path overrides
-PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
+PATH="$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin:$PATH"
 
 if [ `launchctl limit maxfiles | awk '{print $2}'` = 256 ]; then
     echo "increasing maxfiles..."
