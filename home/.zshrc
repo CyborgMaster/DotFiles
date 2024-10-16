@@ -250,16 +250,17 @@ git-stats-by-author() {
 to_entries |
 [
   .[-1],
-  (.[:-1] | sort_by(.value."lines changed") | reverse)
+  (.[:-1] | sort_by(.value."lines changed"| sub("\\(.*\\)";"") | tonumber) | reverse)
 ] |
 flatten |
 from_entries
 JQ
              )
 
-    git quick-stats detailedGitStats |
+    git quick-stats --detailed-git-stats |
         tail -n +3 | # skip past header
         sed $'s/\t/    /g' | # replace tabs with space to get valid YAML
+        sed $'s/total/ total/g' | # total is one more indented than everything else
         yq -y $jq_cmd
 }
 
