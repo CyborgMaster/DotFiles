@@ -70,8 +70,8 @@ zinit wait lucid for \
       OMZP::pip \
       OMZP::rand-quote \
       OMZP::systemadmin \
-      OMZP::kubectl \
-      OMZP::virtualenvwrapper
+      OMZP::kubectl
+      # OMZP::virtualenvwrapper
 
 # Load immediately to set PATH
 zinit lucid for \
