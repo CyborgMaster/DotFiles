@@ -1,6 +1,10 @@
-[user]
-  name = Jeremy Mickelson
-  email = jeremy.mickelson@gmail.com
+# Something like this should go in .local.gitconfig
+#
+# [user]
+#   name = Jeremy Mickelson
+#   email = jeremy.mickelson@gmail.com
+[include]
+  path = ~/.local.gitconfig
 
 # normal, black, red, green, yellow, blue, magenta, cyan and white
 [color]
@@ -37,8 +41,6 @@
 [push]
 	default = simple
 
-[include]
-  path = ~/.local.gitconfig
 [pull]
 	rebase = false
 [diff]
