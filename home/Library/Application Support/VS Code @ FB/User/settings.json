@@ -1,0 +1,121 @@
+{
+    "[go]": {
+        "editor.defaultFormatter": "nuclide.go"
+    },
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[starlark]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[starlark-skycastle]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[java]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[kotlin]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[objective-c]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.cpp"
+    },
+    "[proto]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[hack]": {
+        "editor.defaultFormatter": "nuclide.hack"
+    },
+    "[cpp]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[c]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[cuda-cpp]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFxormatter": "nuclide.arclint",
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[tcc-cpp]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[objective-cpp]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[rust]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[blueprint]": {
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "meta.global.history.enabled": true,
+    "[swift]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[ocaml]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "extensions.experimental.deferredStartupFinishedActivation": true,
+    "terminal.integrated.systemd.shouldUse": true,
+    "window.restoreWindows": "none",
+    "accessibility.openChatEditedFiles": false,
+    "editor.inlineSuggest.allowSuggestOnTriggerCharacters": true,
+    "editor.lightbulb.enabled": "on",
+    "window.title": "${devmate:status}${separator}${activeEditorShort}${separator}${rootName}${separator}${profileName}",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "emmet.showAbbreviationSuggestions": false,
+    "emmet.showExpandedAbbreviation": "never",
+    "fb.ms-remote-connections.odtypes": [
+        {
+            "type": "ondemand_www",
+            "flavor": "default",
+            "folders": []
+        },
+        {
+            "type": "ondemand_snowfort",
+            "flavor": "default",
+            "folders": []
+        }
+    ],
+    "debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
+    "editor.tokenColorCustomizations": {},
+
+
+    // Font Settings
+    "editor.fontFamily": "Monaco, Menlo, 'Courier New', monospace",
+    "editor.fontSize": 10,
+    "editor.tabSize": 2,
+    //"workbench.fontAliasing": "none",
+
+    // Make it more emacs like
+    "emacs-mcx.useMetaPrefixMacCmd": true,
+    "emacs-mcx.wordNavigationStyle": "emacs",
+    // Emulate emacs buffers instead of tab groups
+    "workbench.editor.showTabs": "single",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.revealIfOpen": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.closeEmptyGroups": true,
+    // "workbench.editor.limit.enabled": true,
+    // "workbench.editor.limit.value": 1,
+    // "workbench.editor.limit.perEditorGroup": true,
+    "editor.minimap.enabled": false
+
+    // Settings customized through UI
+}
