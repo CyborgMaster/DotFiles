@@ -48,10 +48,12 @@
   },
   {
     "key": "ctrl+c ctrl+c",
-    "command": "codelens.showLensesInCurrentLine"
+    "command": "codelens.showLensesInCurrentLine",
+    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+c enter",
-    "command": "buck.lsp.test_owning_target"
+    "command": "buck.lsp.test_owning_target",
+    "when": "editorTextFocus"
   }
 ]
