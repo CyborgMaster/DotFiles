@@ -88,13 +88,14 @@
       "folders": []
     },
     {
-      "type": "ondemand_snowfort",
+      "type": "ondemand_fbcode",
       "flavor": "default",
       "folders": []
     }
   ],
   "debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
   "editor.tokenColorCustomizations": {},
+
   // Font Settings
   "editor.fontFamily": "Monaco, Menlo, 'Courier New', monospace",
   "editor.fontSize": 10,
