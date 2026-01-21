@@ -1,39 +1,49 @@
 // Place your key bindings in this file to override the defaults
 [
-    {
-        "key": "shift+left",
-        "command": "workbench.action.focusPreviousGroup",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+right",
-        "command": "workbench.action.focusNextGroup",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+x ctrl+f",
-        "command": "tiller.show"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "-tiller.show"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "tiller.back",
-        "when": "inTiller"
-    },
-    {
-        "key": "enter",
-        "command": "tiller.forward",
-        "when": "inTiller"
-    },
-    {
-        "key": "ctrl+shift+left",
-        "command": "workbench.action.moveActiveEditorGroupLeft"
-    },
-    {
-        "key": "ctrl+shift+right",
-        "command": "workbench.action.moveActiveEditorGroupRight"
-    }
+  {
+    "key": "shift+left",
+    "command": "workbench.action.focusPreviousGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+right",
+    "command": "workbench.action.focusNextGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+x ctrl+f",
+    "command": "tiller.show"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-tiller.show"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "tiller.back",
+    "when": "inTiller"
+  },
+  {
+    "key": "enter",
+    "command": "tiller.forward",
+    "when": "inTiller"
+  },
+  {
+    "key": "ctrl+shift+left",
+    "command": "workbench.action.moveActiveEditorGroupLeft"
+  },
+  {
+    "key": "ctrl+shift+right",
+    "command": "workbench.action.moveActiveEditorGroupRight"
+  },
+  {
+    "key": "cmd+q",
+    "command": "rewrap.rewrapComment",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+q",
+    "command": "-rewrap.rewrapComment",
+    "when": "editorTextFocus"
+  }
 ]
