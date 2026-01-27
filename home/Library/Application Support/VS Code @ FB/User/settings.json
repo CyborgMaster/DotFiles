@@ -91,6 +91,16 @@
       "type": "ondemand_fbcode",
       "flavor": "default",
       "folders": []
+    },
+    {
+      "type": "ondemand_fbsource",
+      "flavor": "default",
+      "folders": []
+    },
+    {
+      "type": "ondemand_www_fbsource_configerator",
+      "flavor": "default",
+      "folders": []
     }
   ],
   "debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
@@ -138,5 +148,10 @@
   // tuttieee.emacs-mcx
 
   // Settings customized through UI
-  "rewrap.wholeComment": false
+  "rewrap.wholeComment": false,
+  "wasabi.interactiveDevelopment.introMessageNumTimesShown": 10,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.inheritEnv": false,
+  "devmate.inline.assertiveness.enable-inline-buttons-highlighted-text": false,
+  "terminal.integrated.cwd": "${fileDirname}",
 }

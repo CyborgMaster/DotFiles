@@ -2,8 +2,7 @@
 [
   {
     "key": "shift+left",
-    "command": "workbench.action.focusPreviousGroup",
-    "when": "editorTextFocus"
+    "command": "workbench.action.focusPreviousGroup"
   },
   {
     "key": "shift+right",
@@ -29,10 +28,6 @@
     "when": "inTiller"
   },
   {
-    "key": "ctrl+shift+left",
-    "command": "workbench.action.moveActiveEditorGroupLeft"
-  },
-  {
     "key": "ctrl+shift+right",
     "command": "workbench.action.moveActiveEditorGroupRight"
   },
@@ -52,8 +47,47 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+c enter",
+    "key": "ctrl+c m",
     "command": "buck.lsp.test_owning_target",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+c .",
+    "command": "testing.runAtCursor",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+cmd+.",
+    "command": "emacs-mcx.findDefinitions",
+    "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorHasDefinitionProvider && editorTextFocus"
+  },
+  {
+    "key": "cmd+.",
+    "command": "-emacs-mcx.findDefinitions",
+    "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorHasDefinitionProvider && editorTextFocus"
+  },
+  {
+    "key": "ctrl+c b",
+    "command": "buck.lsp.build_owning_target",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+left",
+    "command": "workbench.action.moveEditorToLeftGroup"
+  },
+  {
+    "key": "ctrl+c enter",
+    "command": "buck.lsp.run_owning_target",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+cmd+u",
+    "command": "code-compose.chat.toggle",
+    "when": "code-compose.isLoaded"
+  },
+  {
+    "key": "cmd+u",
+    "command": "-code-compose.chat.toggle",
+    "when": "code-compose.isLoaded"
   }
 ]
