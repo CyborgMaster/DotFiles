@@ -89,5 +89,9 @@
     "key": "cmd+u",
     "command": "-code-compose.chat.toggle",
     "when": "code-compose.isLoaded"
+  },
+  {
+    "key": "shift+cmd+-",
+    "command": "redo"
   }
 ]

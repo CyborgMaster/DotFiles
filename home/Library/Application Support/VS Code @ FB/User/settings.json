@@ -101,6 +101,11 @@
       "type": "ondemand_www_fbsource_configerator",
       "flavor": "default",
       "folders": []
+    },
+    {
+      "type": "ondemand_fbcode_configerator_vpnless",
+      "flavor": "default",
+      "folders": []
     }
   ],
   "debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
@@ -154,4 +159,9 @@
   "terminal.integrated.inheritEnv": false,
   "devmate.inline.assertiveness.enable-inline-buttons-highlighted-text": false,
   "terminal.integrated.cwd": "${fileDirname}",
+  "devmate.sidebar.autoRunAllowedCommands": [
+    "tw job:*",
+    "head:*"
+  ],
+  "workbench.editor.navigationScope": "editorGroup",
 }
