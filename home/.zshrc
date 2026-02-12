@@ -149,7 +149,8 @@ zstyle ':completion:*' menu yes select interactive
 #
 # Idea from https://github.com/zdharma/zinit/issues/173
 PS1="READY >" # provide a simple prompt till the theme loads
-zinit ice lucid wait='!' pick='cyborg.zsh-theme'
+# zinit ice lucid wait='!' pick='cyborg.zsh-theme'
+zinit ice lucid pick='cyborg.zsh-theme'
 zinit load ~/.oh-my-zsh-custom/themes
 
 # bat: A cat(1) clone with wings.
@@ -284,3 +285,5 @@ alias new-todos="ack '"'^\+(?!\+).*TODO(?!:K)'"'"
 #        'max memory:                %M '$MAX_MEMORY_UNITS''$'\n'\
 #        'page faults from disk:     %F'$'\n'\
 #        'other page faults:         %R'
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

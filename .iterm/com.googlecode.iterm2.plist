@@ -691,6 +691,8 @@
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.35707834663120563</real>
+	<key>TmuxSyncClipboard</key>
+	<true/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>findMode_iTerm</key>
