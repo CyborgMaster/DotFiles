@@ -164,4 +164,8 @@
     "head:*"
   ],
   "workbench.editor.navigationScope": "editorGroup",
+  "markdown.styles": [
+    "/home/jeremymickelson/.config/vscode-md-preview-light-style.min.css"
+  ],
+  "python.languageServer": "None"
 }
