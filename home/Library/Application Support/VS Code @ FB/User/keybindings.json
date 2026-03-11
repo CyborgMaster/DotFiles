@@ -22,11 +22,11 @@
     "command": "tiller.back",
     "when": "inTiller"
   },
-  {
-    "key": "enter",
-    "command": "tiller.forward",
-    "when": "inTiller"
-  },
+  // {
+  //   "key": "enter",
+  //   "command": "tiller.forward",
+  //   "when": "inTiller"
+  // },
   {
     "key": "ctrl+shift+right",
     "command": "workbench.action.moveActiveEditorGroupRight"

@@ -167,5 +167,7 @@
   "markdown.styles": [
     "/home/jeremymickelson/.config/vscode-md-preview-light-style.min.css"
   ],
-  "python.languageServer": "None"
+  "python.languageServer": "None",
+  "markdown-preview-enhanced.breakOnSingleNewLine": false,
+  "markdown-preview-enhanced.frontMatterRenderingOption": "table"
 }
