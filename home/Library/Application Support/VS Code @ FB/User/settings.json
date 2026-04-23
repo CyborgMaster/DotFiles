@@ -169,5 +169,12 @@
   ],
   "python.languageServer": "None",
   "markdown-preview-enhanced.breakOnSingleNewLine": false,
-  "markdown-preview-enhanced.frontMatterRenderingOption": "table"
+  "markdown-preview-enhanced.frontMatterRenderingOption": "table",
+  "devmate.inline.modelSelection": [
+    "GPT-5.3 Codex",
+    "Claude Sonnet 4.6"
+  ],
+  "notebook.lineNumbers": "on",
+  "notebook.experimental.generate": false,
+  "chat.disableAIFeatures": true
 }
