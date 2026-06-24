@@ -9,7 +9,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "input=$(cat); title=$(echo \"$input\" | jq -r '(.title // \"Claude Code\") + \": \" + (.message // \"Needs attention\")' | head -c 200); if [ -n \"$TMUX\" ]; then pre='\\033Ptmux;\\033' suf='\\033\\\\'; else pre='' suf=''; fi; printf \"${pre}\\033]9;%s\\a${suf}\" \"$title\" > /dev/tty 2>/dev/null; printf \"${pre}\\033]1337;RequestAttention=once\\a${suf}\" > /dev/tty 2>/dev/null; printf '\\a' > /dev/tty 2>/dev/null; echo \"$title\" >> /tmp/claude-notifications.log; true"
+            "command": "bash \"$HOME/.claude/hooks/notify.sh\""
           }
         ]
       }
@@ -25,5 +25,6 @@
     "meta_knowledge@Meta": true,
     "trajectory@Meta": true
   },
-  "skipDangerousModePermissionPrompt": true
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark"
 }

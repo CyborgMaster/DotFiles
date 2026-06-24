@@ -195,3 +195,10 @@
 ;; Increase the characters available to avy to reduce the number of keystrokes
 ;; to jump to a key
 (setq avy-keys (number-sequence ?a ?z))
+
+(with-eval-after-load 'vertico
+  ;; 1. Use C-l to move up a directory level (Ido style)
+  (define-key vertico-map (kbd "C-l") #'vertico-directory-up)
+
+  ;; 2. Use Enter to step into a highlighted directory instead of opening Dired
+  (define-key vertico-map (kbd "RET") #'vertico-directory-enter))

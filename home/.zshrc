@@ -149,7 +149,7 @@ zstyle ':completion:*' menu yes select interactive
 #
 # Idea from https://github.com/zdharma/zinit/issues/173
 PS1="READY >" # provide a simple prompt till the theme loads
-# zinit ice lucid wait='!' pick='cyborg.zsh-theme'
+zinit ice lucid wait='!' pick='cyborg.zsh-theme'
 zinit ice lucid pick='cyborg.zsh-theme'
 zinit load ~/.oh-my-zsh-custom/themes
 
@@ -172,12 +172,13 @@ zinit light trapd00r/LS_COLORS
 
 # SSH key config
 zstyle :omz:plugins:ssh-agent identities id
-if [ -f ~/.ssh/personal_id ]; then
+if [ -f ~/.ssh/id_personal_github ]; then
     zstyle -s :omz:plugins:ssh-agent identities saved_identities
-    zstyle :omz:plugins:ssh-agent identities `echo $saved_identities` personal_id
+    zstyle :omz:plugins:ssh-agent identities `echo $saved_identities` id_personal_github
 fi
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 export PATH=$PATH:~/Library/Python/2.7/bin
 export PATH=$PATH:~/Library/Python/3.9/bin
 
