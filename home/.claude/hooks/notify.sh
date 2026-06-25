@@ -50,13 +50,22 @@ transcript=$(printf '%s' "$input"| jq -r '.transcript_path // ""')
 project=$(basename "$cwd" 2>/dev/null)
 case "$project" in ""|.) project="Claude Code";; esac
 
-# Session label: prefer Claude's auto-generated session title (the most recent
-# "ai-title" line in the transcript), truncated to MAX_TITLE_CHARS. Brand-new
-# sessions have no title yet, so fall back to a short session id.
+# Session label: use the session title from the transcript, truncated to
+# MAX_TITLE_CHARS. Two kinds of title line can appear:
+#   - "custom-title" (field "customTitle") : a name you set yourself with /name
+#   - "ai-title"     (field "aiTitle")     : Claude's auto-generated title
+# Take the most recent line of either kind so an explicit /name wins, and read
+# whichever field that line carries. Brand-new sessions have no title yet, so
+# fall back to a short session id.
 label=""
 if [ -n "$transcript" ] && [ -f "$transcript" ]; then
-	label=$(grep '"type":"ai-title"' "$transcript" 2>/dev/null | tail -1 \
-		| jq -r '.aiTitle // empty' 2>/dev/null)
+	# `tr -d '\000'` strips stray NUL bytes: transcripts can contain them (e.g.
+	# in tool output), and a single NUL makes grep treat the whole file as
+	# binary and emit nothing, which silently dropped the title.
+	label=$(tr -d '\000' < "$transcript" 2>/dev/null \
+		| grep -E '"type":"(custom-title|ai-title)"' \
+		| tail -1 \
+		| jq -r '.customTitle // .aiTitle // empty' 2>/dev/null)
 fi
 if [ -n "$label" ]; then
 	label=$(printf '%s' "$label" | cut -c1-"$MAX_TITLE_CHARS")
