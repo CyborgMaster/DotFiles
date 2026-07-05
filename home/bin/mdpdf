@@ -1,0 +1,85 @@
+#!/bin/bash
+#
+# Render a Markdown file to PDF via Pandoc + WeasyPrint, using the
+# shared print stylesheet in ~/.config/pandoc. Installs missing
+# dependencies via Homebrew (with confirmation) before rendering.
+
+set -euo pipefail
+
+CSS_FILE="$HOME/.config/pandoc/pandoc-pdf-print.css"
+EMOJI_FONT_CASK="font-noto-color-emoji"
+
+have() { command -v "$1" >/dev/null 2>&1; }
+
+font_installed() {
+    if have fc-list; then
+        # No -q here: grep -q stops reading at the first match, which
+        # can SIGPIPE fc-list and make `pipefail` report failure even
+        # though the font was found.
+        fc-list | grep -i "Noto Color Emoji" >/dev/null
+    else
+        [ -f "$HOME/Library/Fonts/NotoColorEmoji-Regular.ttf" ]
+    fi
+}
+
+missing=()
+have pandoc || missing+=("pandoc")
+have weasyprint || missing+=("weasyprint")
+font_installed || missing+=("$EMOJI_FONT_CASK")
+
+if [ "${#missing[@]}" -gt 0 ]; then
+    echo "mdpdf: missing dependencies: ${missing[*]}" >&2
+
+    if ! have brew; then
+        echo "mdpdf: Homebrew is not installed. Install it from https://brew.sh, then re-run." >&2
+        exit 1
+    fi
+
+    printf "Install the above with Homebrew now? [y/N] " >&2
+    read -r reply
+    case "$reply" in
+        y|Y|yes|YES)
+            for pkg in "${missing[@]}"; do
+                case "$pkg" in
+                    pandoc) brew install pandoc ;;
+                    weasyprint) brew install weasyprint ;;
+                    "$EMOJI_FONT_CASK") brew install --cask "$EMOJI_FONT_CASK" && have fc-cache && fc-cache -f >/dev/null 2>&1 ;;
+                esac
+            done
+            ;;
+        *)
+            echo "mdpdf: aborting; dependencies not installed." >&2
+            exit 1
+            ;;
+    esac
+fi
+
+if [ "$#" -lt 1 ]; then
+    echo "Usage: mdpdf <input.md> [output.pdf]" >&2
+    exit 1
+fi
+
+input="$1"
+output="${2:-${input%.*}.pdf}"
+
+if [ ! -f "$CSS_FILE" ]; then
+    echo "mdpdf: stylesheet not found at $CSS_FILE" >&2
+    exit 1
+fi
+
+# The CSS's @font-face src is a placeholder - the real font path
+# varies by username and by install method, and CSS has no $HOME/~
+# expansion. Resolve it here and substitute into a temp copy so the
+# checked-in stylesheet stays machine-agnostic.
+font_path="$(fc-match --format='%{file}' "Noto Color Emoji" 2>/dev/null || true)"
+if [ -z "$font_path" ]; then
+    font_path="$HOME/Library/Fonts/NotoColorEmoji-Regular.ttf"
+fi
+
+tmp_dir="$(mktemp -d -t mdpdf.XXXXXX)"
+trap 'rm -rf "$tmp_dir"' EXIT
+render_css="$tmp_dir/print.css"
+sed "s|__NOTO_EMOJI_FONT_PATH__|$font_path|" "$CSS_FILE" > "$render_css"
+
+pandoc "$input" -o "$output" --pdf-engine=weasyprint -c "$render_css"
+echo "mdpdf: wrote $output"

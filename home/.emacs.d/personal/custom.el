@@ -35,17 +35,19 @@
  '(org-startup-truncated nil)
  '(org-use-speed-commands t)
  '(package-selected-packages
-   '(ace-window ag anzu browse-kill-ring cmake-mode commify company consult copilot
-                counsel crux dash-at-point diff-hl diminish discover-my-major
-                easy-kill elisp-slime-nav enh-ruby-mode epl exec-path-from-shell
-                expand-region flycheck gist git-modes git-timemachine go-impl
-                go-projectile gotest grip-mode guru-mode helm-lsp
-                helm-projectile hl-todo imenu-anywhere inf-ruby lsp-ui magit
+   '(ace-window ag anzu browse-kill-ring cargo cmake-mode commify company consult
+                copilot counsel crux dash-at-point diff-hl diminish
+                discover-my-major easy-kill elisp-slime-nav enh-ruby-mode epl
+                exec-path-from-shell expand-region flycheck-rust gist git-modes
+                git-timemachine go-impl go-projectile gotest grip-mode guru-mode
+                helm-ag helm-descbinds helm-lsp helm-projectile hl-todo
+                imenu-anywhere inf-ruby js2-mode json-mode lsp-ui magit
                 marginalia mmm-mode move-text multi-line nlinum
                 operate-on-number orderless quelpa-use-package
-                rainbow-delimiters rainbow-mode ruby-tools smartparens smartrep
-                string-inflection super-save undo-tree unfill vertico
-                volatile-highlights web-mode yaml-mode yari yasnippet
+                rainbow-delimiters rainbow-mode ron-mode ruby-tools rust-mode
+                smartparens smartrep string-inflection super-save tide
+                tree-sitter-langs typescript-mode undo-tree unfill vertico
+                volatile-highlights web-mode which-key yaml-mode yari yasnippet
                 zenburn-theme zop-to-char))
  '(recenter-positions '(middle 3 bottom))
  '(safe-local-variable-values '((local-preserve-whitespace . t)))

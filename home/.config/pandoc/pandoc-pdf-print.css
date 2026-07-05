@@ -1,0 +1,171 @@
+/* Pin emoji rendering to Noto Color Emoji (installed via
+   `brew install --cask font-noto-color-emoji`; mdpdf checks for it).
+   WeasyPrint's built-in emoji fallback has known vertical-alignment
+   bugs with Apple Color Emoji's bitmap glyphs; Noto's vector
+   COLR/CPAL glyphs don't hit that bug. Scoping via unicode-range
+   means this only applies to actual emoji codepoints — every other
+   character still uses the font stack it would have anyway. */
+@font-face {
+    font-family: "PrintEmoji";
+    /* Resolved at render time by mdpdf (via `fc-match`) into a temp
+       copy of this file - CSS has no $HOME/~ expansion, and the
+       absolute path differs by username and by install method. */
+    src: url("__NOTO_EMOJI_FONT_PATH__");
+    /* Deliberately scoped to the supplementary-plane emoji/pictograph
+       blocks only (plus VS16/ZWJ) - NOT the BMP symbol/arrow/dingbat
+       blocks (U+2190-27BF etc). Those overlap with plain punctuation
+       (e.g. the plain arrow "->" U+2192) that Noto Color Emoji doesn't
+       have a glyph for; claiming that range caused WeasyPrint to
+       render a missing-glyph box instead of falling back, since
+       unicode-range match doesn't guarantee per-glyph fallback. */
+    unicode-range: U+1F000-1FFFF, U+FE0F, U+200D;
+}
+
+@page {
+    size: letter;
+    margin: 0.5in;
+
+    @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: "PrintEmoji", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #666;
+        padding-bottom: 0.1in;
+    }
+}
+
+/* --- Typography & Base --- */
+body {
+    font-family: "PrintEmoji", "Charter", "Georgia", serif;
+    font-size: 10.5pt;  /* Slightly crisper text scale */
+    line-height: 1.55;
+    color: #222;
+    orphans: 3;
+    widows: 3;
+}
+
+p, li {
+    orphans: 3;
+    widows: 3;
+}
+
+a {
+    color: #1a4480;
+}
+
+/* --- Images: never overflow the page --- */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- Tighter, Professional Heading Scale --- */
+h1, h2, h3, h4 {
+    font-family: "PrintEmoji", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #111;
+    margin-top: 1.2em;
+    margin-bottom: 0.4em;
+    page-break-after: avoid;
+}
+
+/* Slimmed down your primary titles */
+h1 {
+    font-size: 18pt;
+    margin-top: 0;
+    padding-bottom: 0.2em;
+}
+
+h2 {
+    font-size: 14pt;
+    padding-bottom: 0.1em;
+}
+
+h3 {
+    font-size: 11.5pt;
+}
+
+
+/* --- Code Blocks --- */
+code, pre {
+    font-family: "PrintEmoji", "SF Mono", "Menlo", monospace;
+    font-size: 9pt;
+    background-color: #f6f6f6;
+}
+
+/* Long unbroken lines (URLs, shell commands) must wrap instead of
+   running off the page or getting silently clipped. */
+pre, code {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+pre {
+    padding: 0.6em 0.8em;
+    page-break-inside: avoid;
+}
+
+/* --- Blockquotes --- */
+blockquote {
+    margin: 1em 0;
+    padding: 0.4em 1em;
+    border-left: 3px solid #999999;
+    color: #444;
+    page-break-inside: avoid;
+}
+
+/* --- Tables --- */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+/* Repeat the header row when a table spans multiple pages. */
+thead {
+    display: table-header-group;
+}
+
+tr {
+    page-break-inside: avoid;
+}
+
+th, td {
+    border-bottom: 1px solid #bbbbbb;
+    padding: 0.4em 0.6em;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    border-bottom: 2px solid #666666;
+    font-family: "PrintEmoji", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+
+
+/* --- Task-list checkboxes --- */
+ul.task-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.task-list li {
+    margin-bottom: 0.4em;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: inline-block;
+    width: 0.9em;
+    height: 0.9em;
+    margin: 0 0.5em 0 0;
+    vertical-align: -0.05em;
+    border: 1.2px solid #333333;
+    border-radius: 2px;
+}
+
+input[type="checkbox"][checked] {
+    background: #333333;
+}

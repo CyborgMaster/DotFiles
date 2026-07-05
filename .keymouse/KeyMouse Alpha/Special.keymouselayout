@@ -816,7 +816,7 @@
   },
   "8": {
    "keyExtra": 0,
-   "action": 6,
+   "action": 1,
    "row": 2,
    "dev": 0,
    "col": 1,
@@ -824,13 +824,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 129,
+   "keyType": 35,
+   "keyCode": 2,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 200"
+   "desc": "Mouse Speed - (Slower)"
   },
   "7": {
    "keyExtra": 0,
@@ -924,7 +924,7 @@
   },
   "2": {
    "keyExtra": 0,
-   "action": 6,
+   "action": 1,
    "row": 2,
    "dev": 0,
    "col": 0,
@@ -932,13 +932,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 134,
+   "keyType": 35,
+   "keyCode": 1,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 1200"
+   "desc": "Mouse Speed + (Faster)"
   },
   "1": {
    "keyExtra": 0,
@@ -1428,7 +1428,7 @@
   },
   "74": {
    "keyExtra": 0,
-   "action": 6,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 1,
@@ -1436,17 +1436,17 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 129,
+   "keyType": 35,
+   "keyCode": 1,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 200"
+   "desc": "Mouse Speed + (Faster)"
   },
   "73": {
-   "keyExtra": 0,
-   "action": 6,
+   "keyExtra": 1,
+   "action": 1,
    "row": 1,
    "dev": 1,
    "col": 1,
@@ -1454,17 +1454,17 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 130,
+   "keyType": 35,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 400"
+   "desc": "Mouse Speed 2"
   },
   "72": {
-   "keyExtra": 0,
-   "action": 6,
+   "keyExtra": 6,
+   "action": 1,
    "row": 0,
    "dev": 1,
    "col": 1,
@@ -1472,13 +1472,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 132,
+   "keyType": 35,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 800 - Default"
+   "desc": "Mouse Speed 7"
   },
   "71": {
    "keyExtra": 0,
@@ -1536,7 +1536,7 @@
   },
   "68": {
    "keyExtra": 0,
-   "action": 6,
+   "action": 1,
    "row": 2,
    "dev": 1,
    "col": 0,
@@ -1544,17 +1544,17 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 134,
+   "keyType": 35,
+   "keyCode": 2,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 1200"
+   "desc": "Mouse Speed - (Slower)"
   },
   "67": {
-   "keyExtra": 0,
-   "action": 6,
+   "keyExtra": 4,
+   "action": 1,
    "row": 1,
    "dev": 1,
    "col": 0,
@@ -1562,17 +1562,17 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 140,
+   "keyType": 35,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 2400"
+   "desc": "Mouse Speed 5 - Default"
   },
   "66": {
-   "keyExtra": 0,
-   "action": 6,
+   "keyExtra": 9,
+   "action": 1,
    "row": 0,
    "dev": 1,
    "col": 0,
@@ -1580,13 +1580,13 @@
    "intsetting3": 0,
    "intsetting2": 0,
    "intsetting1": 0,
-   "keyType": 20,
-   "keyCode": 144,
+   "keyType": 35,
+   "keyCode": 0,
    "strsetting4": "",
    "strsetting3": "",
    "strsetting2": "",
    "strsetting1": "",
-   "desc": "Mouse DPI 3200"
+   "desc": "Mouse Speed 10"
   },
   "65": {
    "keyExtra": 0,
