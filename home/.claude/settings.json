@@ -1,6 +1,10 @@
 {
-  "env": {
-    "DISABLE_AUTOUPDATER": "1"
+  "permissions": {
+    "defaultMode": "bypassPermissions"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash \"$HOME/.claude/statusline-command.sh\""
   },
   "hooks": {
     "Notification": [
@@ -14,16 +18,6 @@
         ]
       }
     ]
-  },
-  "enabledPlugins": {
-    "10x-engineer@claude-templates": true,
-    "claude-hud-meta@claude-templates": true,
-    "code_provenance@Meta": true,
-    "llm-rules@Meta": true,
-    "meta@Meta": true,
-    "meta_codesearch@Meta": true,
-    "meta_knowledge@Meta": true,
-    "trajectory@Meta": true
   },
   "skipDangerousModePermissionPrompt": true,
   "theme": "dark"
