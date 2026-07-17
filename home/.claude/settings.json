@@ -2,10 +2,8 @@
   "permissions": {
     "defaultMode": "bypassPermissions"
   },
-  "statusLine": {
-    "type": "command",
-    "command": "bash \"$HOME/.claude/statusline-command.sh\""
-  },
+  "model": "claude-fable-5[1m]",
+  "fastMode": true,
   "hooks": {
     "Notification": [
       {
@@ -19,6 +17,11 @@
       }
     ]
   },
+  "statusLine": {
+    "type": "command",
+    "command": "bash \"$HOME/.claude/statusline-command.sh\""
+  },
   "skipDangerousModePermissionPrompt": true,
-  "theme": "dark"
+  "theme": "dark",
+  "preferredNotifChannel": "notifications_disabled"
 }
