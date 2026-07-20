@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+#
+# dismiss-top-notification — dismiss the most recent Claude Code notification
+# banner (macOS stacks newest-on-top), so a keyboard shortcut can "pop"
+# through waiting alerts one at a time without reaching for the mouse.
+#
+# Scope: only removes notifications posted under notify.sh's
+# `claude-<session-id>` group tag (see ~/.claude/hooks/notify.sh) - never
+# touches notifications from other apps.
+#
+# Bound to a global keyboard shortcut (Control+Option+Command+D) via the
+# macOS Shortcuts app. Setup, e.g. on a new machine:
+#   1. Open Shortcuts -> File -> New Shortcut.
+#   2. Search the action library for "Run Shell Script" and drag it in.
+#   3. Set Shell to /bin/bash, Input to "no input", and paste this as the
+#      script: /Users/jeremymickelson/.claude/scripts/dismiss-top-notification
+#   4. Name the shortcut "Dismiss Top Notification".
+#   5. Click the (i) info button in the shortcut's detail view - there's an
+#      "Add Keyboard Shortcut" field there. Click it and press
+#      Control+Option+Command+D.
+#      If that field isn't present on this macOS version, add it instead via
+#      System Settings -> Keyboard -> Keyboard Shortcuts -> App Shortcuts -> +,
+#      naming the shortcut exactly "Dismiss Top Notification", scoped to All
+#      Applications (or Shortcuts Events).
+
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
+
+# terminal-notifier -list ALL prints "GroupID\tTitle\tSubtitle\tMessage\tDelivered At",
+# one delivered notification per line. Delivered At is an ISO-ish timestamp
+# ("YYYY-MM-DD HH:MM:SS +0000"), always UTC, so lexicographic sort == chronological.
+newest=$(terminal-notifier -list ALL 2>/dev/null \
+	| awk -F'\t' 'NR>1 && $1 ~ /^claude-/ {print $5"\t"$1}' \
+	| sort -r \
+	| head -1 \
+	| cut -f2)
+
+if [ -n "$newest" ]; then
+	terminal-notifier -remove "$newest" >/dev/null 2>&1
+fi
